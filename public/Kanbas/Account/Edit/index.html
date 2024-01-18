@@ -4,5 +4,62 @@
         <h1>Melissa Pax</h1>
         <label>Name:* </label><input type="text" value="Melissa Pax">
         <label>Pronouns: </label>
+        <select id="pronouns">
+            <option value="none-pronoun">None</option>
+            <option value="she-her-hers">She/Her/Her's</option>
+            <option value="he-him-his">He/Him/His</option>
+            <option value="they-them-their's">They/Them/Their's</option>
+            <option value="other-pronoun">Other</option>
+        </select>
+        <br/>
+        <br/>
+        <label>Title: </label><input type="text"><br/>
+        <h2>Contact</h2>
+        No registered services, you can add some on the <a href="#">settings</a> page.
+        <h2>Contact</h2>
+        No registered services, you can add some on the <a href="#">settings</a> page.
+        <h2>Biography</h2>
+        <label>Faculty, Software Engineer, AI, Space, and renewables energy enthusiast.</label><br/>
+        <textarea id="profile-edit-biography" rows="3" cols="50">Faculty, Software Engineer, AI, Space, and renewables energy enthusiast.</textarea>
+        <br/>
+        <h2>Links</h2>
+        <ul>
+            <li>
+                <a href="#">YouTube</a> <font color="blue"> Links to an external site</font>
+            </li>
+        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Title
+                    </th>
+                    <th></th>
+                    <th>
+                        URL
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width:30%">
+                        <input type="text" value="YouTube">	
+                    </td>
+                    <td style="width:4%">
+                        &rarr;
+                    </td>
+                    <td style="width:30%">
+                        <input type="text" value="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    </td>
+                    <td>
+                        <a href="#">Remove</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button">Add another link</button><br/>
+        <button type="button">Cancel</button> <button type="button">Save profile</button><br/>
+        <button type="button">Edit Profile</button> <button type="button">Cancel Editing</button>
     </body>
 </html>
