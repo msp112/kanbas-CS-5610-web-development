@@ -21,6 +21,6 @@ function App() {
       </header>
     </div>
   );
-}
+} // Returns the output of the algorithm as HTML 
 
 export default App;
