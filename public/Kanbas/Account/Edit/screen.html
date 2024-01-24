@@ -67,59 +67,68 @@
                         </ul>
                     </td>
                     <td>
-                        <select id="speedgrader-select">
-                            <option value="SPEED-GRADER-SELECT">SpeedGrader</option>
-                        </select>
-                        <hr>
-                        <h3>Assignment Name</h3>
-                        <input type = "text"
-                               value="A1 - ENV + HTML"><br/><br/>
-                        <textarea
-                            rows="2" cols="25">This is the assignment description.</textarea><br/><br/>
-                        Points<br/>
-                        <input type="number"
-                               value="100"><br/><br/>
-                        Assignment Group<br/>
-                        <select id="assignment-group">
-                            <option value="ASSIGNMENTS">ASSIGNMENTS</option>
-                        </select><br/><br/>
-                        Display Grade as <br/>
-                        <select id="display-grade-as">
-                            <option value="PERCENTAGE">Percentage</option>
-                        </select><br/><br/>
-                        Submission Type<br/>
-                        <select id="submission-type">
-                            <option value="ONLINE">Online</option>
-                        </select><br/><br/>
-                
-                        <label>Online Entry Options</label><br/>
-                        <input type="checkbox" value="TEXT-ENTRY"
-                            name="ckbox-text-entry" id="text-entry"/>
-                        <label for="text-entry">Text Entry</label><br/>  
-                        <input type="checkbox" value="WEBSITE-URL"
-                            name="ckbox-website-url" id="website-url"/>
-                        <label for="website-url">Website URL</label><br/>          
-                        <input type="checkbox" value="MEDIA-RECORDINGS"
-                            name="ckbox-media-recordings" id="media-recordings"/>
-                        <label for="media-recordings">Media Recordings</label><br/>  
-                        <input type="checkbox" value="STUDENT-ANNOTATIONS"
-                            name="ckbox-student-annotations" id="student-annotations"/>
-                        <label for="student-annotations">Student Annotations</label><br/>  
-                        <input type="checkbox" value="FILE-UPLOADS"
-                            name="ckbox-file-uploads" id="file-uploads"/>
-                        <label for="file-uploads">File Uploads</label><br/><br/>
-                        <label>Assign</label><br/>
-                        <label>Assign to</label><br/>
-                        <input type="text" value="Everyone"><br/><br/>
-                        <label>Due</label><br>
-                        <input type="date" value="2021-01-01"><br/><br/>   
-                        <label>Available from</label><br/>
-                        <input type="date" value="2021-01-01"><br/><br/>
-                        <label>Until</label><br/>
-                        <input type="date" value="2021-01-01"><br/><br/>
-                        <a href="/Kanbas/Courses/Assignments/screen.html"><button type="button">Cancel</button></a>
-                        <a href="/Kanbas/Courses/Assignments/screen.html"><button type="button">Save</button></a>                             
-                    </td>
+                        <body>
+                            <h1>Melissa Pax</h1>
+                            <label>Name:* </label><input type="text" value="Melissa Pax">
+                            <label>Pronouns: </label>
+                            <select id="pronouns">
+                                <option value="none-pronoun">None</option>
+                                <option value="she-her-hers">She/Her/Her's</option>
+                                <option value="he-him-his">He/Him/His</option>
+                                <option value="they-them-their's">They/Them/Their's</option>
+                                <option value="other-pronoun">Other</option>
+                            </select>
+                            <br/>
+                            <br/>
+                            <label>Title: </label><input type="text"><br/>
+                            <h2>Contact</h2>
+                            No registered services, you can add some on the <a href="#">settings</a> page.
+                            <h2>Contact</h2>
+                            No registered services, you can add some on the <a href="#">settings</a> page.
+                            <h2>Biography</h2>
+                            <label>Faculty, Software Engineer, AI, Space, and renewables energy enthusiast.</label><br/>
+                            <textarea id="profile-edit-biography" rows="3" cols="50">Faculty, Software Engineer, AI, Space, and renewables energy enthusiast.</textarea>
+                            <br/>
+                            <h2>Links</h2>
+                            <ul>
+                                <li>
+                                    <a href="#">YouTube</a> <font color="blue"> Links to an external site</font>
+                                </li>
+                            </ul>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Title
+                                        </th>
+                                        <th></th>
+                                        <th>
+                                            URL
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="width:30%">
+                                            <input type="text" value="YouTube">	
+                                        </td>
+                                        <td style="width:4%">
+                                            &rarr;
+                                        </td>
+                                        <td style="width:30%">
+                                            <input type="text" value="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                                        </td>
+                                        <td>
+                                            <a href="#">Remove</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button type="button">Add another link</button><br/>
+                            <button type="button">Cancel</button> <button type="button">Save profile</button><br/>
+                            <button type="button">Edit Profile</button> <button type="button">Cancel Editing</button>
+                        
                 </tr>
             </tbody>
         </table>
