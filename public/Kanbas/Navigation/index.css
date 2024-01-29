@@ -7,6 +7,7 @@
 .wd-kanbas-navigation li {
 padding: 10px;     margin-bottom: 10px;
 font-size: 0.8em;  text-align: center;
+font-family:Arial, Helvetica, sans-serif;
 }
 .wd-kanbas-navigation li.wd-active {
 background-color: white;
@@ -14,6 +15,17 @@ background-color: white;
 .wd-kanbas-navigation li.wd-active a {
 color: red;
 }
+.wd-kanbas-navigation li.wd-active-profile {
+    background-color: white;
+}
+.wd-kanbas-navigation li.wd-active-profile a {
+    color: red; 
+}
+
+.wd-kanbas-navigation li.wd-active-profile a i {
+    color: gray; 
+}
+
 .wd-kanbas-navigation a {
 color: white;
 text-decoration: none;
@@ -22,4 +34,13 @@ text-decoration: none;
 color: red;
 font-size: 2em;
 margin-bottom: 5px;
+}
+.wd-kanbas-navigation li.wd-profile a i {
+    color: white;
+}
+li.wd-logo {
+    padding-bottom: 0px;
+}
+.logo {
+    width:50;
 }
