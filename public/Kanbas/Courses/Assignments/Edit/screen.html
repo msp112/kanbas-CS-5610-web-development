@@ -1,134 +1,264 @@
 <html>
     <head>
-        <link rel="stylesheet" href="/Kanbas/styles.css" />
-        <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
-        <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
-        <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+      <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+      <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+      <link rel="stylesheet" href="/Kanbas/styles.css" />
+      <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+      <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+      <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+      <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+      <link rel="stylesheet" href="/Kanbas/Courses/Assignments/index.css" />
+      <link rel="stylesheet" href="/Kanbas/Courses/Assignments/Edit/index.css" />
     </head>
     <body>
-        <table>
-            <tbody>
-                <tr VALIGN="top">
-                    <td>
-                        <ul class="wd-kanbas-navigation">
-                            <li class="wd-logo"><a href="http://northeastern.edu"><img src="/images/Northeastern_logo.png" alt="Northeastern Logo" class="logo"></a></li>
-                            <li class="wd-profile"><a href = "/Kanbas/Account/Profile/screen.html">
-                                <i class="fa fa-user"></i>Account</a></li>
-                            <li>
-                                <a href = "/Kanbas/Dashboard/screen.html">
-                                <i class="fa fa-tachometer"></i>Dashboard</a></li>
-                            <li class="wd-active"><a href = "/Kanbas/Courses/Home/screen.html">
-                                <i class="fa fa-book"></i>Courses</a></li>
-                            <li><a href = "#">
-                                <i class="fa fa-calendar"></i>Calendar</a></li>
-                            <li><a href = "#">
-                                <i class="fa fa-envelope"></i><br/>Inbox</a></li>
-                            <li><a href = "#">
-                                <i class="fa fa-clock-o"></i>History</a></li>
-                            <li><a href = "#">
-                                <i class="fa fa-play"></i><br/>Studio</a></li>
-                            <li><a href = "#">
-                                <i class="fa fa-arrow-right"></i>Commons</a></li>
-                            <li><a href = "#">
-                                <i class="fa fa-question"></i><br/>Help</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul class="wd-navigation">
-                            <li><a href = "/Kanbas/Courses/Home/screen.html">
-                                Home</a></li>
-                            <li><a href = "/Kanbas/Courses/Modules/screen.html">
-                                Modules</a></li>
-                            <li><a href = "http://piazza.com">
-                                Piazza</a></li>
-                            <li><a href = "#">
-                                Zoom Meetings</a></li>
-                            <li class="wd-active"><a href = "/Kanbas/Courses/Assignments/screen.html">
-                                Assignments</a></li>
-                            <li><a href = "#">
-                                Quizzes</a></li>
-                            <li><a href = "/Kanbas/Courses/Grades/screen.html">
-                                Grades</a></li>
-                            <li><a href = "#">
-                                People</a></li>
-                            <li><a href = "#">
-                                Panopto Video</a></li>
-                            <li><a href = "#">
-                                Discussions</a></li>
-                            <li><a href = "#">
-                                Announcements</a></li>
-                            <li><a href = "#">
-                                Pages</a></li>
-                            <li><a href = "#">
-                                Files</a></li>
-                            <li><a href = "#">
-                                Rubrics</a></li>
-                            <li><a href = "#">
-                                Outcomes</a></li>
-                            <li><a href = "#">
-                                Collaborations</a></li>
-                            <li><a href = "#">
-                                Syllabus</a></li>
-                            <li><a href = "/Kanbas/Courses/Settings/Details/screen.html">
-                                Settings</a></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <select id="speedgrader-select">
-                            <option value="SPEED-GRADER-SELECT">SpeedGrader</option>
-                        </select>
+      <div class="d-none d-md-flex justify-content-between align-items-center">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <i class="fa fa-align-justify" aria-hidden="true" style="color: #D41B2C; margin-right:10px;"></i>
+              <a href="/Kanbas/Courses/Home/screen.html" style="text-decoration:none;">CS5610.36915.202430</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+            <li class="breadcrumb-item active" aria-current="page">A1 ENV</li>
+          </ol>
+        </nav>
+        <button class="btn-top"><i class="fa fa-binoculars" aria-hidden="true"></i> Student View</button>
+      </div>
+      <hr class="d-none d-md-block">
+      <div class="d-block d-sm-block d-md-none">
+        <nav class="navbar navbar-dark bg-dark">
+          <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" style="background-color:#212529; border-color: #212529;">
+            <i class="fa fa-align-justify" aria-hidden="true" style="padding:5px;"></i>
+          </a>        
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                      <button class="small-navi-offcanvas"><a href = "/Kanbas/Account/Profile/screen.html">
+                          <i class="fa fa-user"></i> Account</a></button>
+                      <button class="small-navi-offcanvas">
+                          <a href = "/Kanbas/Dashboard/screen.html">
+                          <i class="fa fa-tachometer"></i> Dashboard</a></button>
+                      <button class="small-navi-offcanvas"><a href = "/Kanbas/Courses/Home/screen.html">
+                          <i class="fa fa-book"></i> Courses</a></button>
+                      <button class="small-navi-offcanvas"><a href = "#">
+                          <i class="fa fa-calendar"></i> Calendar</a></button>
+                      <button class="small-navi-offcanvas"><a href = "#">
+                          <i class="fa fa-envelope"></i> Inbox</a></button>
+                      <button class="small-navi-offcanvas"><a href = "#">
+                          <i class="fa fa-clock-o"></i> History</a></button>
+                      <button class="small-navi-offcanvas"><a href = "#">
+                          <i class="fa fa-play"></i> Studio</a></button>
+                      <button class="small-navi-offcanvas"><a href = "#">
+                          <i class="fa fa-arrow-right"></i> Commons</a></button>
+                      <button class="small-navi-offcanvas"><a href = "#">
+                          <i class="fa fa-question"></i> Help</a></button>
+              </div>
+            </div>
+          </div>
+          <span class="navbar-brand mb-0 h1" style="font-size: 14px;">CS5610<br>Assignments - A1 ENV</span>
+          <p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
+            style="background-color: #212529; border-color: #212529;">
+              <i class="fa fa-binoculars" aria-hidden="true" style="size:20px; padding:5px;"></i><i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div>
+              <button class="btn-collapse"><a href = "/Kanbas/Courses/Home/screen.html">
+                <i class="fa fa-home" aria-hidden="true"></i> Home</a></button>
+            <button class="btn-collapse"><a href = "/Kanbas/Courses/Modules/screen.html">
+              <i class="fa fa-cubes" aria-hidden="true"></i> Modules</a></button>
+            <button class="btn-collapse"><a href = "http://piazza.com">
+              <i class="fa fa-plug" aria-hidden="true"></i> Piazza</a></button>
+            <button class="btn-collapse"><a href = "#">
+              <i class="fa fa-plug" aria-hidden="true"></i> Zoom Meetings</a></button>
+            <button class="btn-collapse"><a href = "/Kanbas/Courses/Assignments/screen.html">
+              <i class="fa fa-pencil" aria-hidden="true"></i> Assignments</a></button>
+            <button class="btn-collapse"><a href = "#">
+              <i class="fa fa-rocket" aria-hidden="true"></i> Quizzes</a></button>
+            <button class="btn-collapse"><a href = "/Kanbas/Courses/Grades/screen.html">
+              <i class="fa fa-book" aria-hidden="true"></i> Grades</a></button>
+            <button class="btn-collapse"><a href = "#">
+              <i class="fa fa-smile-o" aria-hidden="true"></i> People</a></button>
+            <button class="btn-collapse"><a href = "#">
+              <i class="fa fa-plug" aria-hidden="true"></i> Panopto Video</a></button>
+            <button class="btn-collapse"><a href = "#">
+              <i class="fa fa-commenting" aria-hidden="true"></i> Discussions</a></button>
+            <button class="btn-collapse"><a href = "#">
+              <i class="fa fa-microphone" aria-hidden="true"></i> Announcements</a></button>
+            <button class="btn-collapse"><a href = "#">
+              <i class="fa fa-file-word-o" aria-hidden="true"></i> Pages</a></button>
+            <button class="btn-collapse"><a href = "#">
+              <i class="fa fa-folder-o" aria-hidden="true"></i> Files</a></button>
+            <button class="btn-collapse"><a href = "#">
+              <i class="fa fa-clipboard" aria-hidden="true"></i> Rubrics</a></button>
+            <button class="btn-collapse"><a href = "#">
+              <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Outcomes</a></button>
+            <button class="btn-collapse"><a href = "#">
+              <i class="fa fa-circle-o" aria-hidden="true"></i> Collaborations</a></button>
+            <button class="btn-collapse"><a href = "#">
+              <i class="fa fa-book" aria-hidden="true"></i> Syllabus</a></button>
+            <button class="btn-collapse"><a href = "/Kanbas/Courses/Settings/Details/screen.html">
+              <i class="fa fa-cog" aria-hidden="true"></i> Settings</a></button>          </div>
+          </div> 
+        </nav>
+        </div>
+  
+      </div>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+      <div class="d-flex">
+        <div class="d-none d-md-block">
+          <ul class="wd-kanbas-navigation">
+              <ul class="wd-kanbas-navigation">
+                  <li class="wd-logo"><a href="http://northeastern.edu"><img src="/images/Northeastern_logo.png" alt="Northeastern Logo" class="logo"></a></li>
+                  <li class="wd-profile"><a href = "/Kanbas/Account/Profile/screen.html">
+                      <i class="fa fa-user"></i>Account</a></li>
+                  <li>
+                      <a href = "/Kanbas/Dashboard/screen.html">
+                      <i class="fa fa-tachometer"></i>Dashboard</a></li>
+                  <li class="wd-active"><a href = "/Kanbas/Courses/Home/screen.html">
+                      <i class="fa fa-book"></i>Courses</a></li>
+                  <li><a href = "#">
+                      <i class="fa fa-calendar"></i>Calendar</a></li>
+                  <li><a href = "#">
+                      <i class="fa fa-envelope"></i><br/>Inbox</a></li>
+                  <li><a href = "#">
+                      <i class="fa fa-clock-o"></i>History</a></li>
+                  <li><a href = "#">
+                      <i class="fa fa-play"></i><br/>Studio</a></li>
+                  <li><a href = "#">
+                      <i class="fa fa-arrow-right"></i>Commons</a></li>
+                  <li><a href = "#">
+                      <i class="fa fa-question"></i><br/>Help</a></li>
+              </ul>
+          </ul>
+        </div>
+        <div class="d-none d-md-block">
+          <ul class="wd-navigation">
+              <ul class="wd-navigation">
+                  <li ><a href = "/Kanbas/Courses/Home/screen.html">
+                      Home</a></li>
+                  <li><a href = "/Kanbas/Courses/Modules/screen.html">
+                      Modules</a></li>
+                  <li><a href = "http://piazza.com">
+                      Piazza</a></li>
+                  <li><a href = "#">
+                      Zoom Meetings</a></li>
+                  <li class="wd-active"><a href = "/Kanbas/Courses/Assignments/screen.html">
+                      Assignments</a></li>
+                  <li><a href = "#">
+                      Quizzes</a></li>
+                  <li><a href = "/Kanbas/Courses/Grades/screen.html">
+                      Grades</a></li>
+                  <li><a href = "#">
+                      People</a></li>
+                  <li><a href = "#">
+                      Panopto Video</a></li>
+                  <li><a href = "#">
+                      Discussions</a></li>
+                  <li><a href = "#">
+                      Announcements</a></li>
+                  <li><a href = "#">
+                      Pages</a></li>
+                  <li><a href = "#">
+                      Files</a></li>
+                  <li><a href = "#">
+                      Rubrics</a></li>
+                  <li><a href = "#">
+                      Outcomes</a></li>
+                  <li><a href = "#">
+                      Collaborations</a></li>
+                  <li><a href = "#">
+                      Syllabus</a></li>
+                  <li><a href = "/Kanbas/Courses/Settings/Details/screen.html">
+                      Settings</a></li>
+              </ul>
+          </ul>
+        </div>
+        <div class="flex-fill" style="margin-right:30px; margin-left:10px;">
+          <div class="published-bar">
+            <i class="fa fa-check-circle" aria-hidden="true"></i> Published 
+            <button class="button-edit"><i class="fa fa-ellipsis-v"></i></button>
+            </div>
                         <hr>
-                        <h3>Assignment Name</h3>
-                        <input type = "text"
-                               value="A1 - ENV + HTML"><br/><br/>
-                        <textarea
-                            rows="2" cols="25">This is the assignment description.</textarea><br/><br/>
-                        Points<br/>
-                        <input type="number"
-                               value="100"><br/><br/>
-                        Assignment Group<br/>
-                        <select id="assignment-group">
+                        <p>Assignment Name</p>
+                        <input type = "text" class="form-control"
+                               value="A1 - ENV + HTML"></br>
+                        <textarea class="form-control"
+                            rows="5" cols="25">This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a Github source repository, and then deploying the content to a remotem server hosted on Netlify.</textarea>
+                <div class="container-input" style="margin-top:10px; margin-bottom:10px; margin-left:150px; margin-right:200px;">
+                  <div class="row">
+                    <div class="col-3">Points</div>
+                    <div class="col-7"><input type="number" class="form-control"
+                      value="100"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">Assignment Group</div>
+                        <div class="col-7">
+                        <select id="assignment-group" class="form-select">
                             <option value="ASSIGNMENTS">ASSIGNMENTS</option>
-                        </select><br/><br/>
-                        Display Grade as <br/>
-                        <select id="display-grade-as">
+                        </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-3">
+                        Display Grade as </div>
+                        <div class="col-7">
+                        <select id="display-grade-as" class="form-select">
                             <option value="PERCENTAGE">Percentage</option>
-                        </select><br/><br/>
-                        Submission Type<br/>
-                        <select id="submission-type">
-                            <option value="ONLINE">Online</option>
-                        </select><br/><br/>
-                
-                        <label>Online Entry Options</label><br/>
-                        <input type="checkbox" value="TEXT-ENTRY"
-                            name="ckbox-text-entry" id="text-entry"/>
-                        <label for="text-entry">Text Entry</label><br/>  
-                        <input type="checkbox" value="WEBSITE-URL"
-                            name="ckbox-website-url" id="website-url"/>
-                        <label for="website-url">Website URL</label><br/>          
-                        <input type="checkbox" value="MEDIA-RECORDINGS"
-                            name="ckbox-media-recordings" id="media-recordings"/>
-                        <label for="media-recordings">Media Recordings</label><br/>  
-                        <input type="checkbox" value="STUDENT-ANNOTATIONS"
-                            name="ckbox-student-annotations" id="student-annotations"/>
-                        <label for="student-annotations">Student Annotations</label><br/>  
-                        <input type="checkbox" value="FILE-UPLOADS"
-                            name="ckbox-file-uploads" id="file-uploads"/>
-                        <label for="file-uploads">File Uploads</label><br/><br/>
-                        <label>Assign</label><br/>
-                        <label>Assign to</label><br/>
-                        <input type="text" value="Everyone"><br/><br/>
-                        <label>Due</label><br>
-                        <input type="date" value="2021-01-01"><br/><br/>   
-                        <label>Available from</label><br/>
-                        <input type="date" value="2021-01-01"><br/><br/>
-                        <label>Until</label><br/>
-                        <input type="date" value="2021-01-01"><br/><br/>
-                        <a href="/Kanbas/Courses/Assignments/screen.html"><button type="button">Cancel</button></a>
-                        <a href="/Kanbas/Courses/Assignments/screen.html"><button type="button">Save</button></a>                             
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                        </select>
+                      </div>
+                    </div>
+                    
+                      <div class="row">
+                        <div class="col-3">
+                          Assign
+                        </div>
+                        <div class="col-7">
+                          <label class="form-control" style="font-weight:bold">Assign to
+                            <textarea type="text" class="form-select" style="margin:0px; margin-bottom:10px;">Everyone</textarea>
+                            <label>Due</label>
+                            <input type="date" value="2021-01-01" class="form-control" style="margin:0px; margin-bottom:10px;"> 
+                            <div class="row"> 
+                              <div class="col-6">
+                                <label>Available from</label>
+                                <input type="date" value="2021-01-01" class="form-control" style="margin:0px; margin-bottom:10px;">
+                              </div>
+                              <div class="col-6">
+                                <label>Until</label>
+                                <input type="date" value="2021-01-01" class="form-control" style="margin:0px; margin-bottom:10px;">
+                              </div>
+                            </div>
+                            <button class="form-control button-edit"><i class="fa fa-plus" aria-hidden="true"></i> Add</button>
+                          </label>
+                        </div>
+                      </div>
+                       
+                        
+            
+
+                        
+
+                      </div>   
+                      <hr> 
+                      <div class="d-flex justify-content-between" style="margin-top:40px; margin-bottom:40px;">
+                        <span>
+                          <input type="checkbox"> Notify users the content has changed
+                        </span>
+                        <span>
+                          <a href="/Kanbas/Courses/Assignments/screen.html"><button class="button-edit" type="button">Cancel</button></a>
+                          <a href="/Kanbas/Courses/Assignments/screen.html"><button class="button-edit" id= "button-edit-save" type="button">Save</button></a>  
+                        </span>
+                        </div>
+                    </div>
+                                       
     </body>
 </html>
