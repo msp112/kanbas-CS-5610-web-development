@@ -1,0 +1,60 @@
+.total-percent-button {
+    background-color: transparent; 
+    border: 1px solid darkgray;
+    border-radius: 20px;
+    cursor: none;
+
+    padding: 4px;
+}
+
+.total-percent-button:hover {
+    cursor: default;
+}
+
+.search-assignments {
+    height:50px;
+    padding-right:80px;
+    padding-left:3px;
+    border: 1px solid grey;
+    border-radius: 5px;
+
+}
+
+.group-button {
+    font-size: 16px;
+    font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #2d3b45;
+    background: #F5F5F5;
+    border-width: 1px; 
+    border-color: #c7cdd1; 
+    padding: 9px 9px;
+    cursor: pointer; 
+    transition: .2s;
+    border-radius: 3px;
+    margin: 2px; 
+}
+
+#assignment-group-button {
+    background-color: #D41B2C;
+    color:white;
+}
+
+#ellisis-group-button {
+    padding: 4px 4px;
+}
+
+.list-group-item > .justify-content-end {
+    padding-top:15px;
+    padding-right:10px; 
+}
+
+.list-group > .list-group-item > .flex-fill > a {
+    color: navy;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.assignment-description {
+    color: #777777; 
+    font-size: 12px; 
+}
