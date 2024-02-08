@@ -7,18 +7,17 @@
     <link rel="stylesheet" href="/Kanbas/Dashboard/index.css">
   </head>
   <body>
-    <table width="100%">
-      <tbody>
-        <tr>
-          <td valign="top" style="width: 80px">
+    <div class="d-flex">
+      <div class="d-none d-md-block">
+        <ul class="wd-kanbas-navigation">
             <ul class="wd-kanbas-navigation">
                 <li class="wd-logo"><a href="http://northeastern.edu"><img src="/images/Northeastern_logo.png" alt="Northeastern Logo" class="logo"></a></li>
                 <li class="wd-profile"><a href = "/Kanbas/Account/Profile/screen.html">
                     <i class="fa fa-user"></i>Account</a></li>
-                <li class="wd-active">
+                <li>
                     <a href = "/Kanbas/Dashboard/screen.html">
                     <i class="fa fa-tachometer"></i>Dashboard</a></li>
-                <li><a href = "/Kanbas/Courses/Home/screen.html">
+                <li class="wd-active"><a href = "/Kanbas/Courses/Home/screen.html">
                     <i class="fa fa-book"></i>Courses</a></li>
                 <li><a href = "#">
                     <i class="fa fa-calendar"></i>Calendar</a></li>
@@ -33,124 +32,131 @@
                 <li><a href = "#">
                     <i class="fa fa-question"></i><br/>Help</a></li>
             </ul>
-          </td>
-          <td>
+        </ul>
+      </div>
+      <div class="flex-fill">
+        <div class="row">
+          <div class="col-1">
+
+          </div>
+          <div class="col-9">
             <div class="p-4">
-                <h1>Dashboard</h1> <hr />
-                <h2>Published Courses (12)</h2> <hr />
-                <div class="row">
-                  <div class="row row-cols-1 row-cols-md-5 g-4">
-                    <div class="col" style="width: 300px">
-                      <div class="card">
-                        <img src="/images/reactjs.jpg" class="card-img-top"
+              <h1>Dashboard</h1> <hr />
+              <h2>Published Courses (12)</h2> <hr />
+              <div class="row">
+                <div class="row row-cols-1 row-cols-md-5 g-4">
+                  <div class="col" style="width: 300px">
+                    <div class="card">
+                      <img src="/images/reactjs.jpg" class="card-img-top"
+                           style="max-height: 150px"/>
+                      <div class="card-body">
+                        <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
+                           style="text-decoration: none; color: navy; font-weight: bold">
+                           CS1234 React JS</a>
+                        <p class="card-text-top">CS1234.36915.202430</p>
+                        <p class="card-text-bottom">202430_2_Spring 2024 Semester Full Term Grad</p>
+                        <i class="fa fa-bullhorn" aria-hidden="true" style="margin-top:20px;"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col" style="width: 300px">
+                    <div class="card">
+                        <img src="/images/kitten_mirror.jpg" class="card-img-top"
                              style="max-height: 150px"/>
                         <div class="card-body">
-                          <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
-                             style="text-decoration: none; color: navy; font-weight: bold">
-                             CS1234 React JS</a>
-                          <p class="card-text-top">CS1234.36915.202430</p>
-                          <p class="card-text-bottom">202430_2_Spring 2024 Semester Full Term Grad</p>
-                          <i class="fa fa-bullhorn" aria-hidden="true" style="margin-top:20px;"></i>
+                            <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
+                            style="text-decoration: none; color: navy; font-weight: bold">CAT2322 Makeup</a>
+                            <p class="card-text-top">CAT2322.36915.202430</p>
+                            <p class="card-text-bottom">202430_2_Spring 2024 Semester Full Term Grad</p>
+                            <i class="fa fa-bullhorn" aria-hidden="true" style="margin-top:20px;"></i>
                         </div>
-                      </div>
                     </div>
-                    <div class="col" style="width: 300px">
-                      <div class="card">
-                          <img src="/images/kitten_mirror.jpg" class="card-img-top"
-                               style="max-height: 150px"/>
-                          <div class="card-body">
-                              <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
-                              style="text-decoration: none; color: navy; font-weight: bold">CAT2322 Makeup</a>
-                              <p class="card-text-top">CAT2322.36915.202430</p>
-                              <p class="card-text-bottom">202430_2_Spring 2024 Semester Full Term Grad</p>
-                              <i class="fa fa-bullhorn" aria-hidden="true" style="margin-top:20px;"></i>
-                          </div>
-                      </div>
-                  </div>
-                    <div class="col" style="width: 300px">
-                      <div class="card">
-                          <img src="/images/kitten_shrimp.jpg" class="card-img-top"
-                               style="max-height: 150px"/>
-                          <div class="card-body">
-                              <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
-                              style="text-decoration: none; color: navy; font-weight: bold">CAT5634 Care-Taking</a>
-                              <p class="card-text-top">CAT5634.36915.202430</p>
-                              <p class="card-text-bottom">202430_2_Spring 2024 Semester Full Term Grad</p>
-                              <i class="fa fa-bullhorn" aria-hidden="true" style="margin-top:20px;"></i>
-                          </div>
-                      </div>
-                  </div>
+                </div>
                   <div class="col" style="width: 300px">
-                      <div class="card">
-                          <img src="/images/kitten_leaves.jpg" class="card-img-top"
-                               style="max-height: 150px"/>
-                          <div class="card-body">
-                              <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
-                              style="text-decoration: none; color: navy; font-weight: bold">CAT8385 Being silly</a>
-                              <p class="card-text-top">CAT8385.36915.202430</p>
-                              <p class="card-text-bottom">202430_2_Spring 2024 Semester Full Term Grad</p>
-                              <i class="fa fa-bullhorn" aria-hidden="true" style="margin-top:20px;"></i>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col" style="width: 300px">
-                      <div class="card">
-                          <img src="/images/kitten_switch.jpg" class="card-img-top"
-                               style="max-height: 150px"/>
-                          <div class="card-body">
-                              <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
-                              style="text-decoration: none; color: navy; font-weight: bold">ACNH1634 Animal Crossing</a>
-                              <p class="card-text-top">ACNH1634.36915.202430</p>
-                              <p class="card-text-bottom">202430_2_Spring 2024 Semester Full Term Grad</p>
-                              <i class="fa fa-bullhorn" aria-hidden="true" style="margin-top:20px;"></i>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col" style="width: 300px">
-                      <div class="card">
-                          <img src="/images/kitten_bike.jpg" class="card-img-top"
-                               style="max-height: 150px"/>
-                          <div class="card-body">
-                              <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
-                              style="text-decoration: none; color: navy; font-weight: bold">CAT3242 Bike Riding</a>
-                              <p class="card-text-top">CAT3242.36915.202430</p>
-                              <p class="card-text-bottom">202430_2_Spring 2024 Semester Full Term Grad</p>
-                              <i class="fa fa-bullhorn" aria-hidden="true" style="margin-top:20px;"></i>
-                          </div>
-                      </div>
+                    <div class="card">
+                        <img src="/images/kitten_shrimp.jpg" class="card-img-top"
+                             style="max-height: 150px"/>
+                        <div class="card-body">
+                            <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
+                            style="text-decoration: none; color: navy; font-weight: bold">CAT5634 Care-Taking</a>
+                            <p class="card-text-top">CAT5634.36915.202430</p>
+                            <p class="card-text-bottom">202430_2_Spring 2024 Semester Full Term Grad</p>
+                            <i class="fa fa-bullhorn" aria-hidden="true" style="margin-top:20px;"></i>
+                        </div>
                     </div>
-                  <div class="col" style="width: 300px">
-                      <div class="card">
-                          <img src="/images/kitten_hamburger.jpg" class="card-img-top"
-                               style="max-height: 150px"/>
-                          <div class="card-body">
-                              <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
-                              style="text-decoration: none; color: navy; font-weight: bold">CAT9011 World Domination</a>
-                              <p class="card-text-top">CAT9011.36915.202430</p>
-                              <p class="card-text-bottom">202430_2_Spring 2024 Semester Full Term Grad</p>
-                              <i class="fa fa-bullhorn" aria-hidden="true" style="margin-top:20px;"></i>
-                          </div>
-                      </div>
+                </div>
+                <div class="col" style="width: 300px">
+                    <div class="card">
+                        <img src="/images/kitten_leaves.jpg" class="card-img-top"
+                             style="max-height: 150px"/>
+                        <div class="card-body">
+                            <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
+                            style="text-decoration: none; color: navy; font-weight: bold">CAT8385 Being silly</a>
+                            <p class="card-text-top">CAT8385.36915.202430</p>
+                            <p class="card-text-bottom">202430_2_Spring 2024 Semester Full Term Grad</p>
+                            <i class="fa fa-bullhorn" aria-hidden="true" style="margin-top:20px;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="width: 300px">
+                    <div class="card">
+                        <img src="/images/kitten_switch.jpg" class="card-img-top"
+                             style="max-height: 150px"/>
+                        <div class="card-body">
+                            <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
+                            style="text-decoration: none; color: navy; font-weight: bold">ACNH1634 Animal Crossing</a>
+                            <p class="card-text-top">ACNH1634.36915.202430</p>
+                            <p class="card-text-bottom">202430_2_Spring 2024 Semester Full Term Grad</p>
+                            <i class="fa fa-bullhorn" aria-hidden="true" style="margin-top:20px;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="width: 300px">
+                    <div class="card">
+                        <img src="/images/kitten_bike.jpg" class="card-img-top"
+                             style="max-height: 150px"/>
+                        <div class="card-body">
+                            <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
+                            style="text-decoration: none; color: navy; font-weight: bold">CAT3242 Bike Riding</a>
+                            <p class="card-text-top">CAT3242.36915.202430</p>
+                            <p class="card-text-bottom">202430_2_Spring 2024 Semester Full Term Grad</p>
+                            <i class="fa fa-bullhorn" aria-hidden="true" style="margin-top:20px;"></i>
+                        </div>
+                    </div>
                   </div>
-                  <div class="col" style="width: 300px">
-                      <div class="card">
-                          <img src="/images/kitten_seal.jpg" class="card-img-top"
-                               style="max-height: 150px"/>
-                          <div class="card-body">
-                              <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
-                              style="text-decoration: none; color: navy; font-weight: bold">CAT3685 Swimming</a>
-                              <p class="card-text-top">CAT3685.36915.202430</p>
-                              <p class="card-text-bottom">202430_2_Spring 2024 Semester Full Term Grad</p>
-                              <i class="fa fa-bullhorn" aria-hidden="true" style="margin-top:20px;"></i>
-                          </div>
-                      </div>
-                  </div>
-                  </div>
+                <div class="col" style="width: 300px">
+                    <div class="card">
+                        <img src="/images/kitten_hamburger.jpg" class="card-img-top"
+                             style="max-height: 150px"/>
+                        <div class="card-body">
+                            <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
+                            style="text-decoration: none; color: navy; font-weight: bold">CAT9011 World Domination</a>
+                            <p class="card-text-top">CAT9011.36915.202430</p>
+                            <p class="card-text-bottom">202430_2_Spring 2024 Semester Full Term Grad</p>
+                            <i class="fa fa-bullhorn" aria-hidden="true" style="margin-top:20px;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="width: 300px">
+                    <div class="card">
+                        <img src="/images/kitten_seal.jpg" class="card-img-top"
+                             style="max-height: 150px"/>
+                        <div class="card-body">
+                            <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
+                            style="text-decoration: none; color: navy; font-weight: bold">CAT3685 Swimming</a>
+                            <p class="card-text-top">CAT3685.36915.202430</p>
+                            <p class="card-text-bottom">202430_2_Spring 2024 Semester Full Term Grad</p>
+                            <i class="fa fa-bullhorn" aria-hidden="true" style="margin-top:20px;"></i>
+                        </div>
+                    </div>
+                </div>
                 </div>
               </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+            </div>
+            </div>
+          </div>
+
+        </div>
+ 
   </body>
 </html>
