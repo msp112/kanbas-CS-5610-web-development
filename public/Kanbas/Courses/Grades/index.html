@@ -1,187 +1,214 @@
 <html>
     <head>
+        <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="/Kanbas/styles.css" />
+        <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Grades/index.css" />
 
     </head>
     <body>
-        <select id="Gradebook">
-            <option value="GRADES">Gradebook</option>
-        </select>
-        <button type="button">Import</button>
-        <select id="Export">
-            <option values="EXPORT">Export</option>
-        </select>
-        <button type="button">Configure</button>
-        <h2>Student Names</h2>
-        <input 
-        placeholder="Search Students"
-        id="student-search"/><br/>
-        <h2>Assignment Names</h2>
-        <input 
-        placeholder="Search Assignments"
-        id="assignment-search"/><br/><br/>
-        <button type="button">Apply Filters</button><br/><br/>
-    
-        <table border="1" width="100%">
-            <thead>
-                <tr>
-                    <th>Student Name</th>
-                    <th>A1 SETUP Out of 100</th>
-                    <th>A2 HTML Out of 100</th>
-                    <th>A3 CSS Out of 100</th>
-                    <th>A4 BOOTSTRAP Out of 100</th>
-                    <th>A5 JAVASCRIPT Out of 100</th>
-                    <th>A6 REACT Out of 100</th>
-                    <th>A7 REDUX Out of 100</th>
-                    <th>A8 NODE Out of 100</th>
-                    <th>A9 MONGO Out of 100</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Alice Wonderland</td>
-                    <td>98</td>
-                    <td>89</td>
-                    <td>87</td>
-                    <td>90</td>
-                    <td>89</td>
-                    <td>94</td>
-                    <td>88</td>
-                    <td>87</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>Princess Leia</td>
-                    <td>98</td>
-                    <td>80</td>
-                    <td>87</td>
-                    <td>86</td>
-                    <td>100</td>
-                    <td>94</td>
-                    <td><input id="A7 Grade Leia" value = "85" type="number" max="100" min="0"></td>
-                    <td>84</td>
-                    <td>92</td>
-                </tr>
-                <tr>
-                    <td>Luke Skywalker</td>
-                    <td><input id="A1 Grade Luke" value = "99" type="number" max="100" min="0"></td>
-                    <td>88</td>
-                    <td>97</td>
-                    <td>82</td>
-                    <td>96</td>
-                    <td>93</td>
-                    <td>95</td>
-                    <td>100</td>
-                    <td>93</td>
-                </tr>
-                <tr>
-                    <td>Han Solo</td>
-                    <td>83</td>
-                    <td>99</td>
-                    <td>94</td>
-                    <td>98</td>
-                    <td>86</td>
-                    <td>85</td>
-                    <td><input id="A7 Grade Han Solo" value="86" type="number" max="100" min="0"></td>
-                    <td>84</td>
-                    <td>92</td>
-                </tr>
-                <tr>
-                    <td>Lando Calresian</td>
-                    <td>83</td>
-                    <td><input id="A2 Grade Lando" value="92" type="92" max="100" min="0"></td>
-                    <td>80</td>
-                    <td>80</td>
-                    <td>92</td>
-                    <td>92</td>
-                    <td>94</td>
-                    <td>87</td>
-                    <td>95</td>
-                </tr>
-                <tr>
-                    <td>Boba Fet</td>
-                    <td>85</td>
-                    <td>89</td>
-                    <td>94</td>
-                    <td>83</td>
-                    <td>83</td>
-                    <td>84</td>
-                    <td>91</td>
-                    <td>87</td>
-                    <td>96</td>
-                </tr>
-                <tr>
-                    <td>Darth Vader</td>
-                    <td>81</td>
-                    <td>81</td>
-                    <td><input id="A3 Grade Vader" value = "96" type = "number" max="100" min="0"></td>
-                    <td>80</td>
-                    <td>89</td>
-                    <td>88</td>
-                    <td>82</td>
-                    <td>80</td>
-                    <td>82</td>
-                </tr>
-                <tr>
-                    <td>Obi-Wan Kenobi</td>
-                    <td><input id="A1 Grade Kenobi" type="number" value="85" max="100" min="0"></td>
-                    <td>99</td>
-                    <td>87</td>
-                    <td>82</td>
-                    <td>88</td>
-                    <td>83</td>
-                    <td>88</td>
-                    <td>92</td>
-                    <td>80</td>
-                </tr>
-                <tr>
-                    <td>R2 D2</td>
-                    <td>81</td>
-                    <td>92</td>
-                    <td>82</td>
-                    <td>86</td>
-                    <td>83</td>
-                    <td><input id="A6 Grade R2D2" value = "84" type="number" max="100" min="0"></td>
-                    <td>98</td>
-                    <td>85</td>
-                    <td>87</td>
-                </tr>
-                <tr>
-                    <td>C-3PO</td>
-                    <td>94</td>
-                    <td>98</td>
-                    <td>83</td>
-                    <td>83</td>
-                    <td>100</td>
-                    <td>96</td>
-                    <td>96</td>
-                    <td>85</td>
-                    <td>87</td>
-                </tr>
-                <tr>
-                    <td>Yoda</td>
-                    <td>80</td>
-                    <td>89</td>
-                    <td>99</td>
-                    <td>89</td>
-                    <td>96</td>
-                    <td>85</td>
-                    <td>96</td>
-                    <td>92</td>
-                    <td>85</td>
-                </tr>
-                <tr>
-                    <td>Admiral Ackbar</td>
-                    <td>82</td>
-                    <td>88</td>
-                    <td>95</td>
-                    <td>100</td>
-                    <td><input id="A5 Grade Ackbar" value="93" type="number" max="100" min="0"></td>
-                    <td>98</td>
-                    <td>85</td>
-                    <td>87</td>
-                    <td>99</td>
-                </tr>
-            </tbody>
-        </table>
+            <div class="flex-fill">
+                <div class="d-flex justify-content-end"> 
+                        <button type="button" class="grade-button"><i class="fa fa-file" aria-hidden="true"></i> Import</button>
+                        <button type="button" class="grade-button"><i class="fa fa-download" aria-hidden="true"></i> Export <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                        <button type="button" class="grade-button"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                    <h2>Student Names</h2>
+                    <input 
+                    placeholder="Search Students" class="form-select"
+                    id="student-search"/>
+                    </div>
+                <div class="col-6">
+                    <h2>Assignment Names</h2>
+                    <input 
+                    placeholder="Search Assignments" class="form-select"
+                    id="assignment-search"/></div>
+                </div>
+                <button type="button" class="grade-button"><i class="fa fa-filter" aria-hidden="true"></i> Apply Filters</button>
+                    
+                        <table class="grade-book">
+                            <thead>
+                                <tr>
+                                    <th id="student-name-grade-head">Student Name</th>
+                                    <th >A1 SETUP 
+                                        <p class="student-grade">
+                                            Out of 100</p></th>
+                                    <th>A2 HTML<p class="student-grade">
+                                         Out of 100</p></th>
+                                    <th>A3 CSS
+                                        <p class="student-grade">
+                                            Out of 100</p></th>
+                                    <th>A4 BOOTSTRAP
+                                        <p class="student-grade">
+                                            Out of 100</p></th>
+                                    <th>A5 JAVASCRIPT
+                                        <p class="student-grade">
+                                            Out of 100</p></th>
+                                    <th>A6 REACT
+                                        <p class="student-grade">
+                                            Out of 100</p></th>
+                                    <th>A7 REDUX 
+                                        <p class="student-grade">
+                                            Out of 100</p></th>
+                                    <th>A8 NODE<p class="student-grade">
+                                        Out of 100</p></th>
+                                    <th>A9 MONGO<p class="student-grade">
+                                        Out of 100</p></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="student">Doxa Asibey</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>89.59%</td>
+                                    <td>98.65%</td>
+                                    <td>89.0%</td>
+                                    <td>94.0%</td>
+                                    <td>88.0%</td>
+                                    <td>87.8%</td>
+                                    <td>100.0%</td>
+                                </tr>
+                                <tr>
+                                    <td class="student">Thuy Tien Bui</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td><input class="input-grade" value = "85%"/></td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td class="student">Yetong Chen</td>
+                                    <td><input class="input-grade" value = "99%"></td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td class="student">Zhenyu Chen</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td><input class="input-grade" value="86%"></td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td class="student">Yung-Shin Chien</td>
+                                    <td>100%</td>
+                                    <td><input class="input-grade" value=100%></td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td class="student">Basil Coughlan</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td class="student">Rachel Dao</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td><input class="input-grade" value = "100%"></td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td class="student">Lana Do</td>
+                                    <td><input class="input-grade" value="100%"></td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td class="student">Kartikey Dwivedi</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td><input class="input-grade" value = "100%"></td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td class="student">Jiarong Feng</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td class="student">Saurahb Sunil Gade</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td class="student">Admiral Ackbar</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td><input class="input-grade" value="100%"></td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
     </body>
 </html>

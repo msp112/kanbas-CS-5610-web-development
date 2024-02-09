@@ -1,57 +1,91 @@
 <html>
-    <head></head>
+    <head>
+        <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="/Kanbas/styles.css" />
+        <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Assignments/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Assignments/Edit/index.css" />
+    </head>
     <body>
-        <select id="speedgrader-select">
-            <option value="SPEED-GRADER-SELECT">SpeedGrader</option>
-        </select>
-        <hr>
-        <h3>Assignment Name</h3>
-        <input type = "text"
-               value="A1 - ENV + HTML"><br/><br/>
-        <textarea
-               rows="2" cols="25">This is the assignment description.</textarea><br/><br/>
-               Points<br/>
-        <input type="number"
-               value="100"><br/><br/>
-        Assignment Group<br/>
-        <select id="assignment-group">
-            <option value="ASSIGNMENTS">ASSIGNMENTS</option>
-        </select><br/><br/>
-        Display Grade as <br/>
-        <select id="display-grade-as">
-            <option value="PERCENTAGE">Percentage</option>
-        </select><br/><br/>
-        Submission Type<br/>
-        <select id="submission-type">
-            <option value="ONLINE">Online</option>
-        </select><br/><br/>
-
-        <label>Online Entry Options</label><br/>
-        <input type="checkbox" value="TEXT-ENTRY"
-            name="ckbox-text-entry" id="text-entry"/>
-        <label for="text-entry">Text Entry</label><br/>  
-        <input type="checkbox" value="WEBSITE-URL"
-            name="ckbox-website-url" id="website-url"/>
-        <label for="website-url">Website URL</label><br/>          
-        <input type="checkbox" value="MEDIA-RECORDINGS"
-            name="ckbox-media-recordings" id="media-recordings"/>
-        <label for="media-recordings">Media Recordings</label><br/>  
-        <input type="checkbox" value="STUDENT-ANNOTATIONS"
-            name="ckbox-student-annotations" id="student-annotations"/>
-        <label for="student-annotations">Student Annotations</label><br/>  
-        <input type="checkbox" value="FILE-UPLOADS"
-            name="ckbox-file-uploads" id="file-uploads"/>
-        <label for="file-uploads">File Uploads</label><br/><br/>
-        <label>Assign</label><br/>
-        <label>Assign to</label><br/>
-        <input type="text" value="Everyone"><br/><br/>
-        <label>Due</label><br>
-        <input type="date" value="2021-01-01"><br/><br/>   
-        <label>Available from</label><br/>
-        <input type="date" value="2021-01-01"><br/><br/>
-        <label>Until</label><br/>
-        <input type="date" value="2021-01-01"><br/><br/>
-        <a href="/Kanbas/Courses/Assignments/screen.html"><button type="button">Cancel</button></a>
-        <a href="/Kanbas/Courses/Assignments/screen.html"><button type="button">Save</button></a>       
+        <div class="flex-fill" style="margin-right:30px; margin-left:10px;">
+            <div class="published-bar">
+              <i class="fa fa-check-circle" aria-hidden="true"></i> Published 
+              <button class="button-edit"><i class="fa fa-ellipsis-v"></i></button>
+              </div>
+                          <hr>
+                          <p>Assignment Name</p>
+                          <input type = "text" class="form-control"
+                                 value="A1 - ENV + HTML"></br>
+                          <textarea class="form-control"
+                              rows="5" cols="25">This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a Github source repository, and then deploying the content to a remotem server hosted on Netlify.</textarea>
+                  <div class="container-input" style="margin-top:10px; margin-bottom:10px; margin-left:150px; margin-right:200px;">
+                    <div class="row">
+                      <div class="col-3">Points</div>
+                      <div class="col-7"><input type="number" class="form-control"
+                        value="100"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-3">Assignment Group</div>
+                          <div class="col-7">
+                          <select id="assignment-group" class="form-select">
+                              <option value="ASSIGNMENTS">ASSIGNMENTS</option>
+                          </select>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                          Display Grade as </div>
+                          <div class="col-7">
+                          <select id="display-grade-as" class="form-select">
+                              <option value="PERCENTAGE">Percentage</option>
+                          </select>
+                        </div>
+                      </div>
+                      
+                        <div class="row">
+                          <div class="col-3">
+                            Assign
+                          </div>
+                          <div class="col-7">
+                            <label class="form-control" style="font-weight:bold">Assign to
+                              <textarea type="text" class="form-select" style="margin:0px; margin-bottom:10px;">Everyone</textarea>
+                              <label>Due</label>
+                              <input type="date" value="2021-01-01" class="form-control" style="margin:0px; margin-bottom:10px;"> 
+                              <div class="row"> 
+                                <div class="col-6">
+                                  <label>Available from</label>
+                                  <input type="date" value="2021-01-01" class="form-control" style="margin:0px; margin-bottom:10px;">
+                                </div>
+                                <div class="col-6">
+                                  <label>Until</label>
+                                  <input type="date" value="2021-01-01" class="form-control" style="margin:0px; margin-bottom:10px;">
+                                </div>
+                              </div>
+                              <button class="form-control button-edit"><i class="fa fa-plus" aria-hidden="true"></i> Add</button>
+                            </label>
+                          </div>
+                        </div>
+                         
+                          
+              
+  
+                          
+  
+                        </div>   
+                        <hr> 
+                        <div class="d-flex justify-content-between" style="margin-top:40px; margin-bottom:40px;">
+                          <span>
+                            <input type="checkbox"> Notify users the content has changed
+                          </span>
+                          <span>
+                            <a href="/Kanbas/Courses/Assignments/screen.html"><button class="button-edit" type="button">Cancel</button></a>
+                            <a href="/Kanbas/Courses/Assignments/screen.html"><button class="button-edit" id= "button-edit-save" type="button">Save</button></a>  
+                          </span>
+                          </div>
+                      </div>   
     </body>
 </html>

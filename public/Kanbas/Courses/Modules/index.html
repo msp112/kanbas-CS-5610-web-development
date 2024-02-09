@@ -1,204 +1,127 @@
 <html>
     <head>
-        <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
-        <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
-        <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+      <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+      <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+      <link rel="stylesheet" href="/Kanbas/styles.css" />
+      <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+      <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+      <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+      <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
     </head>
     <body>
-      <button type="button" class="btn-top">Collapse All</button>
-      <button type="button" class="btn-top">Expand All</button>
-      <button type="button" class="btn-top">View Progress</button>
-      <select id="Publish">
-          <option value="ALL">Publish All</option>
-          <option value="unpublish-all">Unpublish All</option>
-      </select>
-      <button type="button" class="btn-top" id="btn-module">+ Module</button>
-      <button type="button" class="btn-top"><i class="fa fa-ellipsis-v"></i></button>
-    <ul class="list-group wd-modules">
-        <li class="list-group-item">
-          <div>
-            <i class="fa fa-ellipsis-v"></i> Week 0 - Intro
-            <span class="float-end">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-plus ms-2"></i>
-              <i class="fa fa-ellipsis-vertical"></i>
-            </span>
-          </div>
-          <ul class="list-group">
+      <div class="flex-fill">
+        <ul class="list-group wd-modules">
+            <div class="d-flex justify-content-between">
+                <span><input class="search-assignments" placeholder="Search for Assignments"></span>
+                <div>
+                <button type="button" class="group-button">+ Group</button>
+                <button type="button" class="group-button" id="assignment-group-button">+ Assignment</button>
+                <button class="group-button" id="ellisis-group-button"><i class="fa fa-ellipsis-v"></i></button>
+            </div>
+        </div>
+        <br>
+        <hr style="  border: solid 0.05px darkgray;">
+        <br>
+        <ul class="list-group wd-modules">
             <li class="list-group-item">
-              <i class="fa fa-ellipsis-v"></i> LEARNING OBJECTIVES
-              <span class="float-end">
-                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <i class="fa fa-ellipsis-vertical"></i>
-              </span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v"></i> <pre>  Introduction to the Course</pre>
-              <span class="float-end">
-                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <i class="fa fa-ellipsis-vertical"></i>
-              </span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v"></i> <pre>  Learn what is Web Development</pre>
-              <span class="float-end">
-                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <i class="fa fa-ellipsis-vertical"></i>
-              </span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v"></i> <pre>  Creating a development environment</pre>
-              <span class="float-end">
-                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <i class="fa fa-ellipsis-vertical"></i>
-              </span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v"></i> <pre>  Creating a Web Application</pre>
-              <span class="float-end">
-                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <i class="fa fa-ellipsis-vertical"></i>
-              </span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v"></i> <pre>  Getting started with the 1st assignment</pre>
-              <span class="float-end">
-                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <i class="fa fa-ellipsis-vertical"></i>
-              </span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v"></i> READING
-              <span class="float-end">
-                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <i class="fa fa-ellipsis-vertical"></i>
-              </span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v"></i> <pre>  Full Stack Developer - Chapter 1 - Introduction</pre>
-              <span class="float-end">
-                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <i class="fa fa-ellipsis-vertical"></i>
-              </span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v"></i> <pre>  Full Stack Developer - Chapter 2 - Creating User Interfaces with HTML</pre>
-              <span class="float-end">
-                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <i class="fa fa-ellipsis-vertical"></i>
-              </span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v"></i> SLIDES
-              <span class="float-end">
-                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <i class="fa fa-ellipsis-vertical"></i>
-              </span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v"></i> <pre>  <a href="#">Introduction to Web Development Links to an external site</a></pre>
-              <span class="float-end">
-                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <i class="fa fa-ellipsis-vertical"></i>
-              </span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v"></i> <pre>  <a href="#">Creating an HTTP server with Node.js Links to an external site</a></pre>
-              <span class="float-end">
-                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <i class="fa fa-ellipsis-vertical"></i>
-              </span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v"></i> <pre>  <a href="#">Creating a React Application Links to an external site</a></pre>
-              <span class="float-end">
-                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <i class="fa fa-ellipsis-vertical"></i>
-              </span>
-            </li>
-          </ul>
-        </li>
-        <li class="list-group-item">
-          <div>
-            <i class="fa fa-ellipsis-v"></i> Week 1 - HTML 
-            <span class="float-end">
-              <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-              <i class="fa fa-plus ms-2"></i>
-              <i class="fa fa-ellipsis-vertical"></i>
-            </span>
-          </div>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v"></i> LEARNING OBJECTIVES
-              <span class="float-end">
-                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <i class="fa fa-ellipsis-vertical"></i>
-              </span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v"></i> <pre>  Learn how to create user interfaces with HTML</pre>
-              <span class="float-end">
-                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <i class="fa fa-ellipsis-vertical"></i>
-              </span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v"></i> <pre>  Keep working on assignment 1</pre>
-              <span class="float-end">
-                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <i class="fa fa-ellipsis-vertical"></i>
-              </span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v"></i> <pre>  Deploy the assignment to Netify</pre>
-              <span class="float-end">
-                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <i class="fa fa-ellipsis-vertical"></i>
-              </span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v"></i> READING
-              <span class="float-end">
-                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <i class="fa fa-ellipsis-vertical"></i>
-              </span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v"></i> <pre>  Full Stack Developer - Chapter 1 - Introduction</pre>
-              <span class="float-end">
-                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <i class="fa fa-ellipsis-vertical"></i>
-              </span>
-            </li>
-            <li class="list-group-item">
-              <i class="fa fa-ellipsis-v"></i> <pre>  Full Stack Developer - Chapter 2 - Creating User Interfaces with HTML</pre>
-              <span class="float-end">
-                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                <i class="fa fa-ellipsis-vertical"></i>
-              </span>
-            </li>
-          </ul>
-          <div class="flex-grow-0 me-2 d-none d-lg-block" style="width: 250px">
-            <h3>Course Status</h3>
-            <button type="button">Unpublish</button>
-            <button type="button">Published</button>
-            <ul>
-                <li><a href="">Import Existing Content</a></li>
-                <li><a href="">Import From Commons</a></li>
-                <li><a href="">Choose Home Page</a></li>
-                <li><a href="">View Course Stream</a></li>
-                <li><a href="">New Announcement</a></li>
-                <li><a href="">New Analytics</a></li>
-                <li><a href="">View Course Notifications</a></li>
-            </ul>
-            <h2>Coming up</h2>
-            <a href="">View Calendar</a>
-            <ul>
-                <li><a href="">Lecture CS4550.12631.202410Sep 7 at 11:45am</a></li>
-                <li><a href="">Lecture CS4550.12631.202410Sep 11 at 11:45am</a></li>
-                <li><a href="">CS5610 SP23 Lecture Sep 11 at 6pm</a></li>
-    
-            </ul> 
-          </div>
+              <div class="assignment-header" style="font-weight:bold;">
+                <i class="fa fa-ellipsis-v"></i><i class="fa fa-chevron-down" aria-hidden="true"></i> ASSIGNMENTS
+                <span class="float-end">
+                  <button class="total-percent-button">40% of Total</button>
+                  <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  <i class="fa fa-plus ms-2"></i>
+                  <i class="fa fa-ellipsis-v"></i>
+                </span>
+              </div>
+              <ul class="list-group">
+                <li class="list-group-item d-flex flex-nowrap">
+               
+                  <i class="fa fa-ellipsis-v" style="padding-top:23px; padding-right:10px"></i>
+                  <i class="fa fa-pencil-square-o" aria-hidden="true" style="padding-top:23px; padding-right:10px"></i>
+                  <div class="flex-fill">
+                  <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A1 SETUP</a>
+                  <p class="assignment-description">Week 0 - SETUP - Week starting on Monday September 5th (9/5/2022) Module |
+                  <br/><b>Due</b> Sep 18, 2022 at 11:59pm | 100 pts</p>
+                </div>
+                  <span class="justify-content-end">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v"></i>
+                  </span>
+                </li>
+
+                <li class="list-group-item d-flex flex-nowrap">
+               
+                  <i class="fa fa-ellipsis-v" style="padding-top:23px; padding-right:10px"></i>
+                  <i class="fa fa-pencil-square-o" aria-hidden="true" style="padding-top:23px; padding-right:10px"></i>
+                  <div class="flex-fill">
+                  <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A2 HTML</a>
+                  <p class="assignment-description">Week 1 - HTML - Week starting on Monday September 12th (9/12/2022) Module |
+                  <br/><b>Due</b> Sep 25, 2022 at 11:59pm | 100 pts</p>
+                </div>
+                  <span class="justify-content-end">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v"></i>
+                  </span>
+                </li>
+                
+                <li class="list-group-item d-flex flex-nowrap">
+               
+                  <i class="fa fa-ellipsis-v" style="padding-top:23px; padding-right:10px"></i>
+                  <i class="fa fa-pencil-square-o" aria-hidden="true" style="padding-top:23px; padding-right:10px"></i>
+                  <div class="flex-fill">
+                  <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A3 CSS</a>
+                  <p class="assignment-description">Week 2 - CSS - Week starting on Monday September 19th (9/19/2022) Module |
+                  <br/><b>Due</b> Oct 2, 2022 at 11:59pm | 100 pts</p>
+                </div>
+                  <span class="justify-content-end">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v"></i>
+                  </span>
+                </li>
+
+                <li class="list-group-item d-flex flex-nowrap">
+               
+                  <i class="fa fa-ellipsis-v" style="padding-top:23px; padding-right:10px"></i>
+                  <i class="fa fa-pencil-square-o" aria-hidden="true" style="padding-top:23px; padding-right:10px"></i>
+                  <div class="flex-fill">
+                  <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A4 BOOTSTRAP</a>
+                  <p class="assignment-description">Week 3 - Bootstrap - Week starting on Monday September 26th (9/26/2022) Module |
+                  <br/><b>Due</b> Oct 10, 2022 at 11:59pm | 100 pts</p>
+                </div>
+                  <span class="justify-content-end">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v"></i>
+                  </span>
+                </li>
+
+                <li class="list-group-item d-flex flex-nowrap">
+               
+                  <i class="fa fa-ellipsis-v" style="padding-top:23px; padding-right:10px"></i>
+                  <i class="fa fa-pencil-square-o" aria-hidden="true" style="padding-top:23px; padding-right:10px"></i>
+                  <div class="flex-fill">
+                  <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A5 JAVASCRIPT</a>
+                  <p class="assignment-description">Week 4 - Javascript - Week starting on Monday October 3rd (10/3/2022) Module |
+                  <br/><b>Due</b> Oct 16, 2022 at 11:59pm | 100 pts</p>
+                </div>
+                  <span class="justify-content-end">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v"></i>
+                  </span>
+                </li>
+                <li class="list-group-item d-flex flex-nowrap">
+               
+                  <i class="fa fa-ellipsis-v" style="padding-top:23px; padding-right:10px"></i>
+                  <i class="fa fa-pencil-square-o" aria-hidden="true" style="padding-top:23px; padding-right:10px"></i>
+                  <div class="flex-fill">
+                  <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A6 REACT</a>
+                  <p class="assignment-description">Week 5 - React & Routing - Week starting on Monday October 10th (10/10/2022) Module |
+                  <br/><b>Due</b> Oct 23, 2022 at 11:59pm | 100 pts</p>
+                </div>
+                  <span class="justify-content-end">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v"></i>
+                  </span>
+                </li>
+
     </body>
 </html>
