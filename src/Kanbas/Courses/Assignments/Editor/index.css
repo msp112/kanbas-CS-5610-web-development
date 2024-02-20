@@ -1,0 +1,112 @@
+.published-bar {
+    text-align: right;
+    color: green;
+    font-size: 20px;
+}
+
+.button-edit {
+    font-size: 16px;
+    font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #2d3b45;
+    background: #F5F5F5;
+    border-width: 1px; 
+    border-color: #c7cdd1; 
+    padding: 9px 9px;
+    cursor: pointer; 
+    transition: .2s;
+    border-radius: 3px;
+    margin: 2px; 
+}
+
+.bottom-bar-edit {
+    justify-content: space-between;
+}
+
+#button-edit-save {
+    background-color:#D41B2C;
+    color:white; 
+    font-size: 16px;
+    font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    border-width: 1px; 
+    border-color: #c7cdd1; 
+    padding: 9px 9px;
+    cursor: pointer; 
+    transition: .2s;
+    border-radius: 3px;
+    margin: 2px; 
+
+}
+
+.assignment-name-header {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 0px 16px;
+    font-size: 18px;
+}
+
+#assignment-description {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    height: 150px;
+}
+
+/* #assignment-description {
+    rows: 5;
+    cols: 25; 
+} */
+
+/* .form-control {
+    margin-top:10px;
+    margin-bottom:10px;
+} */
+.form-control {
+    margin:0px; margin-bottom:10px;
+}
+
+.assign-info {
+    font-weight: bold; 
+}
+
+.form-select {
+    margin:0px; margin-bottom:10px;
+}
+
+.container-input {
+    margin-top:10px; margin-bottom:10px; margin-left:150px; margin-right:200px;
+}
+
+.col-3 {
+    padding: 0px;
+    padding-top:10px;
+    text-align:right; 
+}
+
+.row {
+    justify-content: center;
+}
+
+#assignment-edit-screen {
+    margin-right: 50px;
+}
+
+#assignment-edit-button-bottom {
+    margin-top:40px; 
+    margin-bottom:40px;
+}
+
+#button-edit-cancel {
+    font-size: 16px;
+    font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #2d3b45;
+    background: #F5F5F5;
+    border-width: 1px; 
+    border-color: #c7cdd1; 
+    padding: 9px 9px;
+    cursor: pointer; 
+    transition: .2s;
+    border-radius: 3px;
+    margin: 2px; 
+}
+
+#ellipsis-assignment-edit-button {
+    margin-left: 10px;
+}

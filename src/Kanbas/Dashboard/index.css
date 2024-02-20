@@ -1,0 +1,15 @@
+.card-title {
+    text-decoration: none; color: navy; font-weight: bold
+}
+
+.card-text-top {
+    color:#677179; font-size:18px; margin: 0px; margin-top:15px;
+}
+
+.card-text-bottom {
+    color:#677179; font-size:16px; margin: 0px;
+}
+
+.p-3 {
+    margin-left: 100px;
+}

@@ -1,0 +1,52 @@
+.wd-kanbas-navigation {
+    background-color: black;
+    list-style: none;
+    padding: 0px;  margin: 0px;
+    position: fixed;
+    width: 80px;
+    height: 100%;
+    top: 0px; 
+    left: 0px; 
+    z-index: 1000;
+}
+.wd-kanbas-navigation li {
+padding: 10px;     margin-bottom: 5px;
+font-size: 0.8em;  text-align: center;
+font-family:Arial, Helvetica, sans-serif;
+}
+.wd-kanbas-navigation li.wd-active {
+background-color: white;
+}
+.wd-kanbas-navigation li.wd-active a {
+color: red;
+}
+.wd-kanbas-navigation li.wd-active-profile {
+    background-color: white;
+}
+.wd-kanbas-navigation li.wd-active-profile a {
+    color: red; 
+}
+
+.wd-kanbas-navigation li.wd-active-profile a i {
+    color: gray; 
+}
+
+.wd-kanbas-navigation a {
+color: white;
+text-decoration: none;
+}
+.wd-kanbas-navigation a i {
+color: red;
+font-size: 2em;
+margin-bottom: 5px;
+}
+.wd-kanbas-navigation li.wd-profile a i {
+    color: white;
+}
+li.wd-logo {
+    padding-bottom: 0px;
+}
+.NortheasternLogo {
+    width:60px;    
+    margin-bottom: 5px;
+}

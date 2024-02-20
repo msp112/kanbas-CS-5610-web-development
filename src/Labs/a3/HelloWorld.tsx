@@ -1,5 +1,13 @@
+import {Link} from "react-router-dom";
+import Nav from "../../Nav"; 
+
 function HelloWorld() {
-    return <h1>Hello World!</h1>;
+    return (
+    <div>
+        <Nav/>
+        <h1>Hello World!</h1>
+    </div>
+    );
 };
 export default HelloWorld; 
 
@@ -7,3 +15,7 @@ export default HelloWorld;
 // in the return statement are optional. If HelloWorld would have been a
 // more complex component, we could have implemented it in
 // HelloWorld/index.tsx giving us a whole directory to implement it
+
+//<Link to="/Labs/a3">A3</Link> |
+//<Link to="/Kanbas">Kanbas</Link> |
+//<Link to="/hello">Hello</Link> |

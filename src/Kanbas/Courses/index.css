@@ -1,0 +1,14 @@
+.breadcrumb {
+    margin: "100px";
+    color: #D41B2C; 
+    margin-right:10px;
+}
+
+.breadcrumb-title {
+    font-size: 20px;
+}
+
+.navi-bar {
+    margin: "1000px";
+    padding: "50px";
+}

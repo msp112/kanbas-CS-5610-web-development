@@ -1,0 +1,375 @@
+[
+    {
+      "_id": "M101",
+      "name": "React JS Download",
+      "description": "Learning how to download React JS",
+      "course": "CS101",
+      "lessons": [
+        {
+          "_id": "L101",
+          "name": "Windows",
+          "description": "Downloading ReactJS on Windows.",
+          "module": "M101"
+        },
+        {
+          "_id": "L102",
+          "name": "Mac",
+          "description": "Downloading ReactJS on Mac.",
+          "module": "M101"
+        },
+        {
+          "_id": "L103",
+          "name": "Linux",
+          "description": "Downloading ReactJS on Linux.",
+          "module": "M101"
+        }
+      ]
+    },
+    {
+      "_id": "M102",
+      "name": "IDE Setup",
+      "description": "Setting up different IDE.",
+      "course": "CS101",
+      "lessons": [
+        {
+          "_id": "L201",
+          "name": "Visual Studio Code",
+          "description": "Overview of Visual Studio Code.",
+          "module": "M102"
+        },
+        {
+          "_id": "L202",
+          "name": "IntelliJ",
+          "description": "Overview of IntelliJ",
+          "module": "M102"
+        },
+        {
+          "_id": "L203",
+          "name": "Comparing and Contrasting",
+          "description": "Comparing and Contrasting Visual Studio Code and IntelliJ.",
+          "module": "M102"
+        }
+      ]
+    },
+    {
+      "_id": "M103",
+      "name": "ReCat JS",
+      "description": "An Alternate to React JS",
+      "course": "CS101",
+      "lessons": [
+        {
+          "_id": "L301",
+          "name": "Box and Whisker Plot",
+          "description": "Creating Box and Whisker Plots",
+          "module": "M103"
+        },
+        {
+          "_id": "L302",
+          "name": "Bug Chasing",
+          "description": "How to chase bugs instead of fixing them",
+          "module": "M103"
+        },
+        {
+          "_id": "L303",
+          "name": "CatApp",
+          "description": "Creating an app optimized for cats",
+          "module": "M103"
+        }
+      ]
+    },
+    {
+      "_id": "M201",
+      "name": "Eyeliner",
+      "description": "Exploring Different Eyeliners",
+      "course": "CAT101",
+      "lessons": [
+        {
+          "_id": "L101",
+          "name": "MAC",
+          "description": "MAC Eyeliner",
+          "module": "M101"
+        },
+        {
+          "_id": "L102",
+          "name": "NYX",
+          "description": "NYX Eyeliner",
+          "module": "M102"
+        }, 
+        {
+          "_id": "L103",
+          "name": "ELF",
+          "description": "ELF Eyeliner",
+          "module": "M103"
+        }
+      ]
+    },
+    {
+      "_id": "M202",
+      "name": "Cat-Eye",
+      "description": "Creating a Cat-Eye",
+      "course": "CAT101",
+      "lessons": [
+        {
+          "_id": "L201",
+          "name": "Right Eye",
+          "description": "Eyeliner on your right eye",
+          "module": "M201"
+        },
+        {
+          "_id": "L202",
+          "name": "Left Eye",
+          "description": "Eyeliner on your left eye",
+          "module": "M202"
+        }, 
+        {
+          "_id": "L203",
+          "name": "Real Cat Eye Anatomy",
+          "description": "Leaving all the muscles and tissues in cat eyes",
+          "module": "M203"
+        }
+      ]
+    },
+    {
+      "_id": "M203",
+      "name": "Cat Walk",
+      "description": "Practicing your Cat Walk",
+      "course": "CAT101",
+      "lessons": [
+        {
+          "_id": "L301",
+          "name": "Walking down the block",
+          "description": "Practice walking down the block",
+          "module": "M301"
+        },
+        {
+          "_id": "L302",
+          "name": "Claw Sharpening",
+          "description": "Sharpening your claws ",
+          "module": "M302"
+        }, 
+        {
+          "_id": "L303",
+          "name": "Walking down the Cat Walk",
+          "description": "Walk like a cat down an actual Cat Walk",
+          "module": "M303"
+        }
+      ]
+    },
+    {
+      "_id": "M301",
+      "name": "How to take care of your favorite toy",
+      "description": "Taking care of all your favorite toys",
+      "course": "CAT102",
+      "lessons": [
+        {
+          "_id": "L301",
+          "name": "Catnip Toys",
+          "description": "How to take care of your catnip toys ",
+          "module": "M301"
+        },
+        {
+          "_id": "L302",
+          "name": "Squeaky Toys",
+          "description": "How to take care of your Squeaky Toys",
+          "module": "M302"
+        }, 
+        {
+          "_id": "L303",
+          "name": "Soft Toys",
+          "description": "How to take care of your Soft Toys",
+          "module": "M303"
+        }
+      ]
+    },
+    {
+      "_id": "M302",
+      "name": "Taking Care of a kitten",
+      "description": "Tips for taking care of a kitten",
+      "course": "CAT102",
+      "lessons": [
+        {
+          "_id": "L301",
+          "name": "Nap Time",
+          "description": "When kittens should take a nap",
+          "module": "M301"
+        },
+        {
+          "_id": "L302",
+          "name": "Play Time",
+          "description": "When kittens should play",
+          "module": "M302"
+        }, 
+        {
+          "_id": "L303",
+          "name": "Cleaning behind the ears",
+          "description": "How to clean behind tiny ears",
+          "module": "M303"
+        }
+      ]
+    },
+    {
+      "_id": "M303",
+      "name": "Taking care of yourself",
+      "description": "How to take care of yourself",
+      "course": "CAT102",
+      "lessons": [
+        {
+          "_id": "L301",
+          "name": "Eating Food",
+          "description": "Eating lots of food",
+          "module": "M301"
+        },
+        {
+          "_id": "L302",
+          "name": "Naps",
+          "description": "Taking lots of naps",
+          "module": "M302"
+        }, 
+        {
+          "_id": "L303",
+          "name": "Chillin'",
+          "description": "Just vibes",
+          "module": "M303"
+        }
+      ]
+    },
+    {
+      "_id": "M401",
+      "name": "How to stick out your tongue",
+      "description": "Sticking out a tongue is vital to silliness",
+      "course": "CAT103",
+      "lessons": [
+        {
+          "_id": "L401",
+          "name": "Sticking out your tongue",
+          "description": "Stick out your tongue FURTHER",
+          "module": "M401"
+        },
+        {
+          "_id": "L402",
+          "name": "Curling your tongue",
+          "description": "Curling your tongue is extra silly",
+          "module": "M402"
+        }, 
+        {
+          "_id": "L403",
+          "name": "Licking food off floor",
+          "description": "Annoy your owner by licking food off the floor",
+          "module": "M403"
+        }
+      ]
+    },
+    {
+      "_id": "M402",
+      "name": "Zoomies",
+      "description": "How to zoom the best Zoomies",
+      "course": "CAT103",
+      "lessons": [
+        {
+          "_id": "L401",
+          "name": "Running around at 3am",
+          "description": "How to run around the house at 3 am",
+          "module": "M401"
+        },
+        {
+          "_id": "L402",
+          "name": "Bouncing off walls",
+          "description": "How to parkour off walls",
+          "module": "M402"
+        }, 
+        {
+          "_id": "L403",
+          "name": "Screaming",
+          "description": "SCREAMING",
+          "module": "M403"
+        }
+      ]
+    },
+    {
+      "_id": "M403",
+      "name": "How to play in Leaves",
+      "description": "Find a big leaf pile and jump on in",
+      "course": "CAT103",
+      "lessons": [
+        {
+          "_id": "L401",
+          "name": "Finding the perfect leaf pile",
+          "description": "How to find the perfect leaf pile",
+          "module": "M403"
+        },
+        {
+          "_id": "L402",
+          "name": "Jumping around in the leaf pile",
+          "description": "How to jump around to create the biggest leaf splash",
+          "module": "M403"
+        }, 
+        {
+          "_id": "L403",
+          "name": "Hiding in the leaf pile",
+          "description": "Being really sneaky in the leaf pile",
+          "module": "M403"
+        }
+      ]
+    },
+    {
+      "_id": "M501",
+      "name": "Finding Gifts for Raymond",
+      "description": "Find the best gifts to give Raymond in Animal Crossing",
+      "course": "ACNH101",
+      "lessons": [
+        {
+          "_id": "L401",
+          "name": "Finding the perfect leaf pile",
+          "description": "How to find the perfect leaf pile",
+          "module": "M403"
+        },
+        {
+          "_id": "L402",
+          "name": "Jumping around in the leaf pile",
+          "description": "How to jump around to create the biggest leaf splash",
+          "module": "M403"
+        }, 
+        {
+          "_id": "L403",
+          "name": "Hiding in the leaf pile",
+          "description": "Being really sneaky in the leaf pile",
+          "module": "M403"
+        }
+      ]
+    },
+    {
+      "_id": "M601",
+      "name": "Finding the perfect bike",
+      "description": "Finding the perfect bike to ride",
+      "course": "CAT104",
+      "lessons": [
+        {
+          "_id": "L401",
+          "name": "Finding the perfect leaf pile",
+          "description": "How to find the perfect leaf pile",
+          "module": "M403"
+        },
+        {
+          "_id": "L402",
+          "name": "Jumping around in the leaf pile",
+          "description": "How to jump around to create the biggest leaf splash",
+          "module": "M403"
+        }, 
+        {
+          "_id": "L403",
+          "name": "Hiding in the leaf pile",
+          "description": "Being really sneaky in the leaf pile",
+          "module": "M403"
+        }
+      ]
+    },
+    {
+      "_id": "M303",
+      "name": "Spacecraft Systems Engineering",
+      "description": "Overview of spacecraft systems and subsystems engineering.",
+      "course": "CAT105"},
+      {
+        "_id": "M303",
+        "name": "Spacecraft Systems Engineering",
+        "description": "Overview of spacecraft systems and subsystems engineering.",
+        "course": "CAT106"}  ]
