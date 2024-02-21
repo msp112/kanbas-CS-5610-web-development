@@ -29,3 +29,202 @@
     margin: 0px;
 }
 
+.btn-top {
+    font-size: 16px;
+    font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #2d3b45;
+    background: #F5F5F5;
+    border-width: 1px; 
+    border-color: #c7cdd1; 
+    padding: 9px 9px;
+    cursor: pointer; 
+    transition: .2s;
+    border-radius: 3px;
+    margin: 2px; 
+  }
+
+  .title-and-publish-buttons {
+    align-items:start;
+  }
+
+.btn-status {
+    font-size: 16px;
+    font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #2d3b45;
+    background: #F5F5F5;
+    border-width: 1px; 
+    border-color: #c7cdd1; 
+    padding: 9px 9px;
+    cursor: pointer; 
+    transition: .2s;
+    border-radius: 3px;
+    margin: 2px; 
+  }
+
+.course-status {
+    font-size: 16px;
+    font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #2d3b45;
+    margin: 0px; 
+    margin-top: 40px;
+  }
+
+
+  #publish {
+    background: #F5F5F5;
+  }
+  
+  .btn-status { 
+    font-size: 16px;
+    font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #2d3b45;
+    background: #F5F5F5;
+    border-width: 1px; 
+    border-color: #c7cdd1; 
+    padding: 8px 14px;
+    cursor: pointer; 
+    transition: .2s;
+    border-radius: 3px;
+    margin: 2px; 
+    width: 100%;
+    text-align: left; 
+  }
+  
+  .btn-pub {
+    font-size: 16px;
+    font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #2d3b45;
+    background: #F5F5F5;
+    border-width: 1px; 
+    border-color: #c7cdd1; 
+    padding: 8px 14px;
+    cursor: pointer; 
+    transition: .2s;
+    margin: 0px; 
+  }
+  #btn-publish {
+    background: #B0D4AB; 
+    color: white;
+  }
+
+  
+
+#btn-module {
+        background: #D41B2C;
+        color: white;
+}
+
+#breadcrumb-space {
+    height: 60px;
+}
+
+#btn-status-import-existing-content {
+    margin-top:10px; 
+  }
+  
+  .coming-up-div {
+    display: flex; 
+    justify-content: space-between;
+    border:black; 
+  }
+  
+  .course-status {
+    margin: 0px; 
+    margin-top: 40px;
+  }
+  
+  .coming-up-bar {
+    margin: 0px;
+  }
+  
+  .calendar a {
+    color:#D41B2C;
+    font-size: 12; 
+  }
+  
+  .breadcrumb {
+    margin-left:  100px; 
+  }
+  
+  .fa-ellipsis-v {
+    padding:10px; 
+  }
+  
+  .fa-check-circle {
+    color:green; 
+    padding: 5px; 
+  }
+  
+  .fa-plus {
+    padding:5px;
+  }
+  
+  .small-navi-offcanvas {
+    width:100%;
+    text-align: left;
+    background-color: white;
+    border: white; 
+    padding:15px; 
+  }
+  
+  .small-navi-offcanvas a {
+    color: #D41B2C;
+    font-size: 20px;
+    text-decoration:none; 
+  }
+  
+  .btn-collapse {
+    width:100%;
+    text-align: left;
+    background-color: white;
+    border: white; 
+    padding:3px; 
+  }
+  
+  .btn-collapse a{
+    color: #D41B2C;
+    font-size: 14px;
+    text-decoration:none; 
+  }
+  
+  .side-title {
+    padding: 0px; 
+    padding-top:10px;
+    margin: 0px; 
+  }
+  
+  #coming-up {
+    justify-content: space-between;
+  }
+  
+  .calendar-link {
+    padding:0px; 
+    margin-bottom:-20px; 
+  }
+  
+  .calendar-link {
+    padding:0px;
+    margin:0px;
+    color: #D41B2C;
+  }
+  
+  .grade-a1 {
+    color: #D41B2C;
+    font-size: 14px;
+    padding: 0px; 
+    margin: 0px; 
+  }
+  
+  .grade-a1-points {
+    font-size:12px; 
+    color: #777777;
+    padding:0px;
+    margin: 0px;  
+  }
+  
+  .calendar-lecture-name {
+    padding: 0px;
+    margin: 0px; 
+    font-size:12px; 
+    color: #777777;
+  }

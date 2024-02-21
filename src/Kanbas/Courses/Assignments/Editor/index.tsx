@@ -17,6 +17,9 @@ function AssignmentEditor() {
       navigate(`/Kanbas/Courses/${courseId}/Assignments`);
     };
     return (
+      <>
+      <div className = "row" id="breadcrumb-space"></div>
+      
       <div className="flex-fill" id="assignment-edit-screen">
         <div className="published-bar">
             <FaCheckCircle/> Published 
@@ -94,6 +97,7 @@ function AssignmentEditor() {
 
       </div>
       </div>
+      </>
     );
   }
   export default AssignmentEditor;

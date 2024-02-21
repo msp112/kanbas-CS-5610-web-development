@@ -110,3 +110,7 @@
 #ellipsis-assignment-edit-button {
     margin-left: 10px;
 }
+
+.breadcrumb-space {
+    height: 60px;
+}

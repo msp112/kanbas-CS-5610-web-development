@@ -468,12 +468,159 @@
       ]
     },
     {
-      "_id": "M303",
-      "name": "Spacecraft Systems Engineering",
-      "description": "Overview of spacecraft systems and subsystems engineering.",
-      "course": "CAT105"},
-      {
-        "_id": "M303",
-        "name": "Spacecraft Systems Engineering",
-        "description": "Overview of spacecraft systems and subsystems engineering.",
-        "course": "CAT106"}  ]
+      "_id": "M701",
+      "name": "Taking over America",
+      "description": "Taking over America",
+      "course": "CAT105",
+      "lessons": [
+        {
+          "_id": "L701",
+          "name": "Taking over Ohio",
+          "description": "Taking over Ohio",
+          "module": "M701"
+        },
+        {
+          "_id": "L702",
+          "name": "Taking over the Northeast",
+          "description": "Taking over the Northeast",
+          "module": "M701"
+        }, 
+        {
+          "_id": "L703",
+          "name": "Manifest Destiny",
+          "description": "Taking over the entire country",
+          "module": "M701"
+        }
+      ]
+    },
+    {
+      "_id": "M702",
+      "name": "Taking over the World",
+      "description": "Taking over the World",
+      "course": "CAT105",
+      "lessons": [
+        {
+          "_id": "L701",
+          "name": "Taking over Europe",
+          "description": "Taking over Europe",
+          "module": "M702"
+        },
+        {
+          "_id": "L702",
+          "name": "Taking over Asia",
+          "description": "Taking over Asia",
+          "module": "M702"
+        }, 
+        {
+          "_id": "L703",
+          "name": "Taking over Everywhere Else",
+          "description": "Taking over the World!",
+          "module": "M702"
+        }
+      ]
+    },    
+    {
+      "_id": "M703",
+      "name": "Taking over the Universe",
+      "description": "Taking over the Universe",
+      "course": "CAT105",
+      "lessons": [
+        {
+          "_id": "L701",
+          "name": "Taking over the Moon",
+          "description": "Moon Landing",
+          "module": "M703"
+        },
+        {
+          "_id": "L702",
+          "name": "Taking over the Milky Way",
+          "description": "Drink the milk",
+          "module": "M703"
+        }, 
+        {
+          "_id": "L703",
+          "name": "Start another Big Bang",
+          "description": "Boom boom",
+          "module": "M703"
+        }
+      ]
+    },
+    {
+      "_id": "M801",
+      "name": "Mastering the Kitty Paddle",
+      "description": "Master the kitty paddle",
+      "course": "CAT106",
+      "lessons": [
+        {
+          "_id": "L801",
+          "name": "Put on Floaties",
+          "description": "Floaties",
+          "module": "M801"
+        },
+        {
+          "_id": "L802",
+          "name": "Practice Above Water",
+          "description": "Do the kitty paddle above water",
+          "module": "M801"
+        }, 
+        {
+          "_id": "L803",
+          "name": "Practice in the Water",
+          "description": "Put on more floaties if needed",
+          "module": "M803"
+        }
+      ]
+    },
+    {
+      "_id": "M802",
+      "name": "Catfishing",
+      "description": "Learning to catfish",
+      "course": "CAT106",
+      "lessons": [
+        {
+          "_id": "L801",
+          "name": "Find someone that looks like a fisherman",
+          "description": "Usually they have beards",
+          "module": "M802"
+        },
+        {
+          "_id": "L802",
+          "name": "Look cute so they get you a fish",
+          "description": "Can't resist a cute face",
+          "module": "M802"
+        }, 
+        {
+          "_id": "L803",
+          "name": "Grab the Catfish and Eat it",
+          "description": "Ideally run away first and don't say thank you",
+          "module": "M802"
+        }
+      ]
+    },
+    {
+      "_id": "M803",
+      "name": "Avoiding Water",
+      "description": "You are a cat",
+      "course": "CAT106",
+      "lessons": [
+        {
+          "_id": "L801",
+          "name": "Identify sources of water",
+          "description": "Usually area around them is also wet",
+          "module": "M803"
+        },
+        {
+          "_id": "L802",
+          "name": "Avoid",
+          "description": "Flee if necessary",
+          "module": "M803"
+        }, 
+        {
+          "_id": "L803",
+          "name": "Take a nap somewhere warm",
+          "description": "You earned it",
+          "module": "M803"
+        }
+      ]
+    }
+  ]

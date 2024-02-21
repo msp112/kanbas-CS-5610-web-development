@@ -72,3 +72,7 @@
 #left-side-assignment {
     align-items: right;
 }
+
+.breadcrumb-space {
+    height: 60px;
+}

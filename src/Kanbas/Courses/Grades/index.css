@@ -104,3 +104,7 @@
     padding-left: 0px;
     font-size: 18px;
 }
+
+.breadcrumb-space {
+    height: 60px;
+}

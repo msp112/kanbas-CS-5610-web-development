@@ -12,3 +12,31 @@
     margin: "1000px";
     padding: "50px";
 }
+
+.first-item-breadcrumb {
+    font-size: 50px;
+}
+
+.breadcrumb-div {
+    height: 50px;
+}
+
+.student-view {
+    font-size: 16px;
+    font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #2d3b45;
+    background: #F5F5F5;
+    border-width: 1px; 
+    border-color: #c7cdd1; 
+    padding: 8px 14px;
+    cursor: pointer; 
+    transition: .2s;
+    margin-right: 25px; 
+    margin-top:15px;
+
+}
+
+#breadcrumb-row {
+    height: 100px;
+    z-index: 1000;
+}

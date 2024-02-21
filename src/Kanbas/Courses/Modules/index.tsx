@@ -2,6 +2,8 @@ import ModuleList from "./List";
 import { FaEllipsisV } from "react-icons/fa";
 function Modules() {
   return (
+    <>
+    <div className = "row" id="breadcrumb-space"></div>
     <div className="module-div">
           <div className="flex-fill">
           <div className="d-flex justify-content-end">
@@ -20,6 +22,7 @@ function Modules() {
 
       <ModuleList />
     </div>
+    </>
   );
 }
 export default Modules;

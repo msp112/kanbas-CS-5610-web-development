@@ -12,6 +12,7 @@ function Grades() {
 
   return (
     <div>
+      <div className = "row" id="breadcrumb-space"></div>
       <div className="flex-fill" id="grade-screen">
       <div className="d-flex justify-content-between">
       <div>

@@ -11,6 +11,7 @@ function Assignments() {
     (assignment) => assignment.course === courseId);
   return (
     <>
+    <div className = "row" id="breadcrumb-space"></div>
     <div className="flex-fill">
                     <div className="d-flex justify-content-between">
                         <span><input className="search-assignments" placeholder="Search for Assignments"/></span>

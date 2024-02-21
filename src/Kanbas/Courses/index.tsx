@@ -1,8 +1,15 @@
 import { courses } from "../../Kanbas/Database";
 import { Navigate, Route, Routes, useParams } from "react-router-dom";
+import { FaBinoculars } from "react-icons/fa";
 import { HiMiniBars3 } from "react-icons/hi2"; 
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/Editor";
+import React from 'react';
+import { BrowserRouter as Router} from 'react-router-dom';
+import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import { useLocation } from 'react-router-dom';
+import CustomBreadcrumb from "./Breadcrumb";
+
 
 import Grades from "./Grades";
 import CourseNavigation from "./Navigation";
@@ -11,28 +18,30 @@ import Modules from "./Modules";
 import Home from "./Home";
 
 function Courses() {
-    const { courseId } = useParams(); 
+    const { courseId, pageName } = useParams(); 
     const course = courses.find((course) => course._id === courseId);
+    const {pathname} = useLocation(); 
+    const currentLocation = pathname.split("/");
+
+
     return (
-    //   <div class="d-none d-md-flex justify-content-between align-items-center">
-    //   <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-    //     <ol class="breadcrumb">
-    //       <li class="breadcrumb-item">
-    //         <i class="fa fa-align-justify" aria-hidden="true" style="color: #D41B2C; margin-right:10px;"></i>
-    //         <a href="/Kanbas/Courses/Home/screen.html" style="text-decoration:none;">CS5610.36915.202430</a>
-    //       </li>
-    //       <li class="breadcrumb-item active" aria-current="page">Home</li>
-    //     </ol>
-    //   </nav>
-    //   <button class="btn-top"><i class="fa fa-binoculars" aria-hidden="true"></i> Student View</button>
-    // </div>
-    // <hr class="d-none d-md-block"></hr>
+
       <div className = "m">
-        <div className = "breadcrumb"> 
-          <p className="breadcrumb-title"><HiMiniBars3 /> {course?.name} SP23</p>
-          
+        <div className="row d-none d-md-flex " id="breadcrumb-row">
+          <div className="col-9">
+          <CustomBreadcrumb/>
+          </div>
+          <div className="col-3">
+          <button className="student-view"><FaBinoculars/>Student View</button>
+          </div>
+          <hr/>
+    
         </div>
+
+            
+        
         <CourseNavigation />
+        
         
         
       <div>
