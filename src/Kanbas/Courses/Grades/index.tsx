@@ -68,6 +68,9 @@ function Grades() {
                     const grade = grades.find(
                       (grade) => grade.student === enrollment.user && grade.assignment === assignment._id
                     );
+                    console.log('Assignment:', assignment._id);
+                    console.log('Grade:', grade?.grade || "");
+                    console.log('Student:', grade?.student);
                     return <td className = "each-grade" key={assignment._id}>{grade?.grade || ""}</td>;
                   })}
                 </tr>

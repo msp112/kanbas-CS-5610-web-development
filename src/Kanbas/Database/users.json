@@ -67,7 +67,7 @@
       "lastName": "In the Hat",
       "email": "Cat@in the hat.com",
       "dob": "1368-09-22",
-      "role": "FACULTY"
+      "role": "STUDENT"
     },
     {
       "_id": "128",
@@ -77,7 +77,7 @@
       "lastName": "Kitty",
       "email": "hello@kitty.com",
       "dob": "2931-03-01",
-      "role": "FACULTY"
+      "role": "STUDENT"
     },
     {
       "_id": "129",
@@ -87,7 +87,7 @@
       "lastName": "Lion King",
       "email": "simba@lionking.com",
       "dob": "2879-07-15",
-      "role": "FACULTY"
+      "role": "STUDENT"
     },
     {
         "_id": "130",
@@ -97,6 +97,6 @@
         "lastName": "Cat",
         "email": "fluffdog@northeastern.edu",
         "dob": "2005-01-01",
-        "role": "FACULTY"
+        "role": "STUDENT"
     }
   ]

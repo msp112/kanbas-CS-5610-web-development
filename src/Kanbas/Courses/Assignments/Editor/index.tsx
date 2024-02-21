@@ -27,7 +27,7 @@ function AssignmentEditor() {
         <input value={assignment?.title}
                className="form-control mb-2"/>
                               <textarea className="form-control" id="assignment-description"
-                              >This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a Github source repository, and then deploying the content to a remotem server hosted on Netlify.</textarea>
+                              >Describe the assignment</textarea>
                   <div className="container-input">
                     <div className="row">
                       <div className="col-3">Points</div>

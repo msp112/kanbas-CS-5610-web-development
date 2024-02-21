@@ -1,0 +1,31 @@
+.breadcrumb {
+    margin: 24px; 
+}
+
+.breadcrumb a {
+    color: #D41B2C; 
+    justify-content: space-between;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.calender-refs{
+    color: #D41B2C; 
+}
+
+.top-nav-bar {
+    justify-content: space-between;
+    
+}
+
+.navbar-brand {
+    text-decoration: none;
+    background-color: transparent
+}
+
+.course-status {
+    margin: 0px;
+}
+
