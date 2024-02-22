@@ -1,19 +1,17 @@
 import { Link, useLocation } from "react-router-dom";
 import "./index.css"; 
-import { FaBars, FaBinoculars, FaHome, FaPlug, FaPencilAlt, FaRocket, FaBook, FaMicrophone, FaClipboard, FaCog } from "react-icons/fa";
+import { FaBars, FaBinoculars, FaHome, FaPlug, FaPencilAlt, FaRocket, FaBook, FaMicrophone, FaClipboard} from "react-icons/fa";
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { MdOutlineViewModule } from "react-icons/md";
-import { IoMdClose } from "react-icons/io";
-import Example from "../Off-Canvas";
 import { useParams } from "react-router-dom";
 import { courses } from "../../Database";
 import { IoIosArrowDown } from "react-icons/io";
 import { LuTarget } from "react-icons/lu";
 import { SlSpeech } from "react-icons/sl";
 
-import { FaTachometerAlt, FaRegUserCircle, FaRegCalendarAlt, FaClock, FaPlayCircle, FaQuestionCircle, FaRegSmile, FaFile, FaFolder, FaRegCircle  } from "react-icons/fa";
+import { FaTachometerAlt, FaRegUserCircle, FaRegCalendarAlt, FaClock, FaPlayCircle, FaQuestionCircle, FaRegSmile, FaFile, FaFolder } from "react-icons/fa";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
 import Collapse from 'react-bootstrap/Collapse';

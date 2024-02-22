@@ -1,15 +1,17 @@
 import React from "react"; 
 import { Link } from "react-router-dom"; 
 import { courses } from "../Database";
+import { IoMegaphoneOutline } from "react-icons/io5";
 import "./index.css";
 
 function Dashboard() {
   return (
     <div className="p-3">
       <h1>Dashboard</h1>              <hr />
-      <h2>Published Courses (8)</h2> <hr />
+      <h2>Published Courses (7)</h2> <hr />
       <div className="row">
-        <div className="row row-cols-1 row-cols-md-5 g-4">
+        <div className="courses-rows row row-cols-1 row-cols-md-5 g-4 justify-content-left">
+
           {courses.map((course) => (
             <div key={course._id} className="col" style={{ width: 300 }}>
               <div className="card">
@@ -22,7 +24,7 @@ function Dashboard() {
                     {course.number} {course.name} </Link>
                   <p className="card-text-bottom">Spring 2023 Semester {course.startDate} - {course.endDate} </p>
                   <Link to={`/Kanbas/Courses/${course._id}/Home`} className="btn btn-primary">
-                    Go </Link>
+                    <IoMegaphoneOutline/> </Link>
                 </div>
               </div>
             </div>

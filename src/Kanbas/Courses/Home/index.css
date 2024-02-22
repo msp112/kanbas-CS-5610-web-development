@@ -11,6 +11,10 @@
     border: none;
 }
 
+.list-group {
+  text-align: left;
+}
+
 .calender-refs{
     color: #D41B2C; 
 }
@@ -27,6 +31,9 @@
 
 .course-status {
     margin: 0px;
+    font-size: 16px;
+    font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #2d3b45;
 }
 
 .btn-top {
@@ -44,7 +51,7 @@
   }
 
   .title-and-publish-buttons {
-    align-items:start;
+    text-align: left;
   }
 
 .btn-status {
@@ -72,6 +79,7 @@
 
   #publish {
     background: #F5F5F5;
+    padding: 10px;
   }
   
   .btn-status { 
@@ -105,6 +113,7 @@
   #btn-publish {
     background: #B0D4AB; 
     color: white;
+    margin-left: 10px;
   }
 
   
@@ -124,7 +133,7 @@
   
   .coming-up-div {
     display: flex; 
-    justify-content: space-between;
+    justify-content: left;
     border:black; 
   }
   
@@ -191,6 +200,8 @@
     padding: 0px; 
     padding-top:10px;
     margin: 0px; 
+    text-align:left;
+    font-size: 18px;
   }
   
   #coming-up {
@@ -227,4 +238,55 @@
     margin: 0px; 
     font-size:12px; 
     color: #777777;
+  }
+
+  .line-under-to-do {
+    margin: 5px;
+  }
+
+  #coming-up-items li {
+    color: transparent;
+  }
+
+  .coming-up-lecture {
+    color: black;
+  }
+
+  .coming-up-calendar {
+    color: black;
+  }
+
+  #buttons-top-id {
+    align-items: end;
+  } 
+
+  .grade-a1 {
+    font-size: 16px;
+  }
+
+  #grade-a1-item {
+    padding-top:0px;
+  }
+
+  .exit-a1 {
+    color: gray;
+  }
+
+  #view-calendar {
+    margin: 0px;
+    color: #D41B2C;
+    text-decoration-line:underline;
+  }
+
+  .calendar-icon {
+    color: gray;
+  }
+
+  .coming-up-lecture {
+    color: #D41B2C;
+  }
+
+  .calendar-items {
+    display:flex; 
+    padding:8px;
   }

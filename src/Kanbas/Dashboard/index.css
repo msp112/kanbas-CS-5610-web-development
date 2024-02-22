@@ -13,3 +13,13 @@
 .p-3 {
     margin-left: 100px;
 }
+
+.courses-rows {
+    align-items: end;
+}
+
+.btn-primary {
+    background-color: transparent;
+    color: gray;
+    border: none;
+}
