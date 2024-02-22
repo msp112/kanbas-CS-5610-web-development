@@ -101,6 +101,10 @@
   color: white;
 }
 
+.breadcrumb-space {
+  height: 100px;
+}
+
 #btn-status-import-existing-content {
   margin-top:10px; 
 }
@@ -210,4 +214,8 @@
   margin: 0px; 
   font-size:12px; 
   color: #777777;
+}
+
+#side-bar {
+  margin: 200px;
 }
