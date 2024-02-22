@@ -8,10 +8,12 @@ import "./index.css";
 
 function Home() {
   return (
-    <div className="flex-fill">
-        <div className="d-flex ">
+    <div className="d-flex">
+      <div className = "row" id="breadcrumb-space"></div>
+        <div className="d-flex">
           <div className="row">
-            <div className="col-9">
+            <div className="col-8 d-none d-md-block">
+              
             <div className="d-flex justify-content-center">
               <button type="button" className="btn-top">Collapse All</button>
               <button type="button" className="btn-top">Expand All</button>
@@ -25,8 +27,23 @@ function Home() {
         </div>
               <ModuleList />
     </div>
+    <div className="d-small-block d-md-none">
+                    
+    <div className="d-flex justify-content-center">
+              <button type="button" className="btn-top">Collapse All</button>
+              <button type="button" className="btn-top">Expand All</button>
+              <button type="button" className="btn-top">View Progress</button>
+              <select id="Publish">
+                  <option value="ALL">Publish All</option>
+                  <option value="unpublish-all">Unpublish All</option>
+              </select>
+              <button type="button" className="btn-top" id="btn-module">+ Module</button>
+              <button type="button" className="btn-top"><FaEllipsisV/></button>
+        </div>
+              <ModuleList />
+    </div>
 
-  <div className="col-3" id="side-bar">
+  <div className="col-3 d-none d-md-block" id="side-bar">
     <div className = "title-and-publish-buttons">
     <p className="course-status">Course Status</p>
         <button type="button" className="btn-pub"><TiCancelOutline/> Unpublish</button>

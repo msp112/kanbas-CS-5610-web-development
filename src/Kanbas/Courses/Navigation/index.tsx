@@ -1,12 +1,19 @@
 import { Link, useLocation } from "react-router-dom";
 import "./index.css"; 
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaBinoculars, FaHome, FaPlug, FaPencilAlt, FaRocket, FaBook, FaMicrophone, FaClipboard, FaCog } from "react-icons/fa";
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { MdOutlineViewModule } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
 import Example from "../Off-Canvas";
-import { FaTachometerAlt, FaRegUserCircle, FaBook, FaRegCalendarAlt, FaClock, FaPlayCircle, FaQuestionCircle } from "react-icons/fa";
+import { useParams } from "react-router-dom";
+import { courses } from "../../Database";
+import { IoIosArrowDown } from "react-icons/io";
+import { LuTarget } from "react-icons/lu";
+import { SlSpeech } from "react-icons/sl";
+
+import { FaTachometerAlt, FaRegUserCircle, FaRegCalendarAlt, FaClock, FaPlayCircle, FaQuestionCircle, FaRegSmile, FaFile, FaFolder, FaRegCircle  } from "react-icons/fa";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
 import Collapse from 'react-bootstrap/Collapse';
@@ -14,9 +21,30 @@ import Collapse from 'react-bootstrap/Collapse';
 
 
 function CourseNavigation() {
-  const links = ["Home", "Modules", "Piazza", "Zoom Meetings", "Assignments", "Quizzes", "Grades", "People", "Panopto Video", "Discussions", "Announcements", "Pages", "Files", "Rubrics", "Outcomes", "Collaborations", "Syllabus", "Settings"];
+  const links = ["Home", "Modules", "Piazza", "Zoom Meetings", "Assignments", "Quizzes", "Grades", "People", "Panopto Video", "Discussions", "Announcements", "Pages", "Files", "Rubrics", "Outcomes"];
+  const linksTop = [{label: "Home", icon: <FaHome/> }, 
+  {label: "Modules", icon: <MdOutlineViewModule/> }, 
+  {label: "Piazza", icon: <FaPlug/>}, 
+  {label: "Zoom Meetings", icon: <FaPlug/>}, 
+  {label: "Assignments", icon: <FaPencilAlt/> }, 
+  {label: "Quizzes", icon: <FaRocket/>}, 
+  {label: "Grades", icon: <FaBook/>}, 
+  {label: "People", icon: <FaRegSmile/>}, 
+  {label: "Panopto Video", icon: <FaPlug/>}, 
+  {label: "Discussions", icon: <SlSpeech/> }, 
+  {label: "Announcements", icon: <FaMicrophone/>}, 
+  {label: "Pages", icon: <FaFile/>}, 
+  {label: "Files", icon: <FaFolder />}, 
+  {label: "Rubrics", icon: <FaClipboard />}, 
+  {label: "Outcomes", icon: <LuTarget/>}, 
+];
+
   const { pathname } = useLocation();
   const [show, setShow] = useState(false);
+  const { courseId} = useParams(); 
+  const course = courses.find((course) => course._id === courseId);
+  const pathParts = pathname.split('/');
+  const currentLocation = pathParts.slice(4,5);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -56,23 +84,25 @@ function CourseNavigation() {
       </Offcanvas>
 
 
-      <span className="navbar-brand mb-0 h1" >CS5610<br/>Modules</span>
-      <>
+      <span className="navbar-brand mb-0 h1" >{course?.name} <br/>{currentLocation}</span>
       <Button
         onClick={() => setOpen(!open)}
         aria-controls="example-collapse-text"
-        aria-expanded={open}
+        aria-expanded={open} 
+        className = "left-side-button-navi"
       >
-        click
+        <FaBinoculars/><IoIosArrowDown/>
       </Button>
       <Collapse in={open}>
-        <div id="example-collapse-text">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-          terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-          labore wes anderson cred nesciunt sapiente ea proident.
+        <div id="navigation-course-dropdown" style={{ position: 'absolute', top: '100%' }}>
+          <ul className="top-right-navi-bar">
+        {linksTop.map((link, index) => (
+        <li key={index} className={pathname.includes(link.label) ? "wd-active" : ""}>
+          <Link to={`/Kanbas/Courses/${courseId}/${link.label}`} className="link-text" style={{ paddingTop: '20px' }}> {link.icon} {link.label} </Link>
+        </li>
+      ))} </ul>
         </div>
       </Collapse>
-    </>
     </nav>
     </div>
     <div className = "d-none d-md-block">

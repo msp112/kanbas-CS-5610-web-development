@@ -1,11 +1,10 @@
 import ModuleList from "./List";
 import { FaEllipsisV } from "react-icons/fa";
+import "./index.css";
 function Modules() {
   return (
-    <>
-    <div className = "row" id="breadcrumb-space"></div>
-    <div className="module-div">
-          <div className="flex-fill">
+    <div className="flex-fill">
+    <div className="module-div container-fluid d-flex flex-column ">
           <div className="d-flex justify-content-end">
               <button type="button" className="group-button">Collapse All</button>
               <button type="button" className="group-button">Expand All</button>
@@ -16,13 +15,13 @@ function Modules() {
               </select>
               <button type="button" className="group-button" id="module-button">+ Module</button>
               <button type="button" className="group-button"><FaEllipsisV/></button>
-        </div>
-                </div>
+
+          </div>
                 <hr/>
 
       <ModuleList />
     </div>
-    </>
+    </div>
   );
 }
 export default Modules;

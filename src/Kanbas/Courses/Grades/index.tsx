@@ -11,8 +11,7 @@ function Grades() {
   const es = enrollments.filter((enrollment) => enrollment.course === courseId);
 
   return (
-    <div>
-      <div className = "row" id="breadcrumb-space"></div>
+
       <div className="flex-fill" id="grade-screen">
       <div className="d-flex justify-content-between">
       <div>
@@ -80,7 +79,6 @@ function Grades() {
           </tbody>
         </table>
       </div>
-    </div>
     </div>
   );
 }

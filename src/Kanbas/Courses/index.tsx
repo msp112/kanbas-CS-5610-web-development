@@ -26,7 +26,7 @@ function Courses() {
 
     return (
 
-      <div className = "m">
+      <div className = "courses-screen">
         <div className="row d-none d-md-flex " id="breadcrumb-row">
           <div className="col-9">
           <CustomBreadcrumb/>
@@ -37,17 +37,24 @@ function Courses() {
           <hr/>
     
         </div>
-
-            
-        
         <CourseNavigation />
-        
-        
-        
       <div>
         <div
-          className="overflow-y-scroll position-fixed bottom-0 end-0"
-          style={{ left: "320px", top: "50px" }} >
+          className="overflow-y-scroll position-fixed bottom-0 end-0 d-none d-md-flex "
+          style={{ left: "310px", top: "100px" }} >
+          <Routes>
+            <Route path="/" element={<Navigate to="Home" />} />
+            <Route path="Home" element={<Home/>} />
+            <Route path="Modules" element={<Modules/>} />
+            <Route path="Piazza" element={<h1>Piazza</h1>} />
+            <Route path="Assignments" element={<Assignments/>} />
+            <Route path="Assignments/:assignmentId" element={<AssignmentEditor/>}/>
+            <Route path="Grades" element={<Grades />} />
+          </Routes>
+        </div>
+        <div
+          className="overflow-y-scroll position-flex bottom-0 end-0 d-small d-md-none "
+          style={{ left: "0px", top: "20px" }} >
           <Routes>
             <Route path="/" element={<Navigate to="Home" />} />
             <Route path="Home" element={<Home/>} />

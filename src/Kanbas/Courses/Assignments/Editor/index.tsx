@@ -18,8 +18,6 @@ function AssignmentEditor() {
     };
     return (
       <>
-      <div className = "row" id="breadcrumb-space"></div>
-      
       <div className="flex-fill" id="assignment-edit-screen">
         <div className="published-bar">
             <FaCheckCircle/> Published 
