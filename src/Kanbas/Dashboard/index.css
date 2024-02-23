@@ -23,3 +23,7 @@
     color: gray;
     border: none;
 }
+
+.row {
+    align-items: right;
+}

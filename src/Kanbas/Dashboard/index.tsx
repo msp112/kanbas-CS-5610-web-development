@@ -10,7 +10,7 @@ function Dashboard() {
       <h1>Dashboard</h1>              <hr />
       <h2>Published Courses (7)</h2> <hr />
       <div className="row">
-        <div className="courses-rows row row-cols-1 row-cols-md-5 g-4 justify-content-left">
+        <div className="courses-rows row row-cols-1 row-cols-md-5 g-4 justify-content-start">
 
           {courses.map((course) => (
             <div key={course._id} className="col" style={{ width: 300 }}>
@@ -23,7 +23,7 @@ function Dashboard() {
                   <Link className="card-text-top" to={`/Kanbas/Courses/${course._id}/Home`}>
                     {course.number} {course.name} </Link>
                   <p className="card-text-bottom">Spring 2023 Semester {course.startDate} - {course.endDate} </p>
-                  <Link to={`/Kanbas/Courses/${course._id}/Home`} className="btn btn-primary">
+                  <Link to={`/Kanbas/Courses/${course._id}/Home`} className="btn-primary">
                     <IoMegaphoneOutline/> </Link>
                 </div>
               </div>

@@ -26,7 +26,9 @@ function Courses() {
 
     return (
 
-      <div className = "courses-screen">
+
+      <div>
+              <div className = "courses-screen">
         <div className="row d-none d-md-flex " id="breadcrumb-row">
           <div className="col-9">
           <CustomBreadcrumb/>
@@ -38,7 +40,6 @@ function Courses() {
     
         </div>
         <CourseNavigation />
-      <div>
         <div
           className="overflow-y-scroll position-fixed bottom-0 end-0 d-none d-md-flex "
           style={{ left: "310px", top: "100px" }} >
