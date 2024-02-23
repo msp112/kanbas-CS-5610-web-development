@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-//import './index.css';
 import App from './App';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
-  // Document is the DOM data structure 
-  // Go through the tree and find the element whose ID is 'root' 
+
 );
 root.render(
   <React.StrictMode>
