@@ -22,18 +22,11 @@ function AssignmentEditor() {
     state.assignmentsReducer.assignments);
   const assignment = useSelector((state: KanbasState) => 
     state.assignmentsReducer.assignment);
-    //const assignment = assignments.find(
-    //  (assignment) => assignment._id === assignmentId);
     const { courseId } = useParams();
     const courseString = courseId?.toString(); 
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
-    
-    // const handleSave = () => {
-    //   console.log("Actually saving assignment TBD in later assignments");
-    //   navigate(`/Kanbas/Courses/${courseId}/Assignments`);
-    // };
     return (
       <>
       <div className="flex-fill" id="assignment-edit-screen">

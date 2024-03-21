@@ -34,9 +34,6 @@ function Assignments() {
   const dispatch = useDispatch();
   const defaultAssignment = useSelector((state: KanbasState) => state.assignmentsReducer.defaultAssignment);
 
-   
-  // const assignmentList = assignments.filter(
-  //   (assignment) => assignment.course === courseId);
   return (
 
     <div className="flex-fill">
