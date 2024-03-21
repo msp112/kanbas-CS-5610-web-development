@@ -17,9 +17,19 @@ import "./index.css";
 import Modules from "./Modules";
 import Home from "./Home";
 
-function Courses() {
+interface Course {
+  _id: string;
+  name: string;
+  number: string;
+  startDate: string;
+  endDate: string;
+  image: string;
+}
+
+function Courses( { classes }:
+  { classes: Course[];}) {
     const { courseId, pageName } = useParams(); 
-    const course = courses.find((course) => course._id === courseId);
+    const course = classes.find((course) => course._id === courseId);
     const {pathname} = useLocation(); 
     const currentLocation = pathname.split("/");
 

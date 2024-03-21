@@ -1,0 +1,44 @@
+.overlay {
+
+    background-color: rgb(250, 250, 250); 
+    position: fixed; 
+    top: 20%;
+    left: 50%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 1000;
+    border: 4px solid black;
+    
+}
+
+.dialog {
+    width: 300px; 
+    height: 150px; 
+    padding: 30px;
+    font-size: 16px;
+    font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #2d3b45;
+
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-button, .confirm-button {
+
+        font-size: 16px;
+        font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+        color: #2d3b45;
+        background: #F5F5F5;
+        border-width: 1px; 
+        border-color: #c7cdd1; 
+        padding: 9px 9px;
+        cursor: pointer; 
+        transition: .2s;
+        border-radius: 3px;
+        margin: 2px; 
+
+}

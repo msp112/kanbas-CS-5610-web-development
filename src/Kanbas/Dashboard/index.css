@@ -27,3 +27,18 @@
 .row {
     align-items: right;
 }
+
+
+.editing-dashboard-button {
+    font-size: 16px;
+    font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #2d3b45;
+    background: #F5F5F5;
+    border-width: 1px; 
+    border-color: #c7cdd1; 
+    padding: 9px 9px;
+    cursor: pointer; 
+    transition: .2s;
+    border-radius: 3px;
+    margin: 2px; 
+  }

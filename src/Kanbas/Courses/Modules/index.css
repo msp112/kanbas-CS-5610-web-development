@@ -71,3 +71,24 @@
 .breadcrumb-space {
   height: 60px;
 }
+
+#edit-screen {
+  background-color: rgb(238, 236, 236);
+}
+
+.module-name-input {
+  margin-right: 10px;
+  margin-left: 10px; 
+}
+
+ul {
+  list-style-type: none;
+}
+
+.module-description-input {
+  margin-top: 10px; 
+}
+
+#add-group-button {
+  margin-left:10px; 
+}
